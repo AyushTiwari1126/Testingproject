@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TB014",
+"Test Case Description":"To validate the response for phoneNo after passing more than 12 digits into it",
+"RequestBody":{
+  "branchName": "hardoi",
+  "issuerId": "Issuer1",
+  "address1": "myaddress1",
+  "address2": "myaddress2",
+  "state": "mystate",
+  "countryCode": "IN",
+  "city": "mycity",
+  "postalCode": "242316",
+  "contactPerson": "ayush",
+  "emailId": "branchemail@gmail.com",
+  "phoneNo": "2134553512816415293",
+  "accessAllBranch": "Y"
+},
+"ExpectedHTTPStatusCode":"400"
+}

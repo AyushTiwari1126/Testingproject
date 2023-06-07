@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TDS006",
+"Test Case Description":"To validate the response after passing integer typed value into departmentId",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": 1
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "1",
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","status","errorDetail"],
+"ExpectedDeptstatus":"A",
+"ExpectedDeptId":"1",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

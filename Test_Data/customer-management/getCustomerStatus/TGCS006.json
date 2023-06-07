@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TGCS006",
+"Test Case Description":"Validate the response after providing invalid customerId(length max+1)",
+
+"RequestBody":{
+                "customerId": "C12121212121212121212"
+              },
+
+                      
+
+"ExpectedHTTPStatusCode":"400"
+
+}

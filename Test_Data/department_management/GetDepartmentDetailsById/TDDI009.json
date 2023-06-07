@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TDDI009",
+"Test Case Description":"To validate the response after passing the float/double typed value into departmentId",
+"RequestBody":{
+  "departmentId": 2.0
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

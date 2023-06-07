@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TH006",
+"Test Case Description":"Validate response after providing valid request body with valid header (without authorization header)",
+"RequestBody":{
+  "branchName": "Mumbai"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-31T06:43:08.040+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/branch-info/v1.0/getBranchDetailsByName"
+},
+"ExpectedHTTPStatusCode":"401"
+}

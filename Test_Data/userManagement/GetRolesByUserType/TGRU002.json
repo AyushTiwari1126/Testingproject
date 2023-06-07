@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TGRU002",
+"Test Case Description":"Validate the response after providing valid userType (ISSADMIN) with Issuer1 Authorized Token",
+"RequestBody":{
+                  "userType":"ISSADMIN"
+              },
+"ExpectedResponseBody":{
+                           "responseCode": "000",
+                           "responseData": [
+                                             {
+                                             "roleId": "ROLE TEST SIT",
+                                             "roleDescription": "ROLE TEST SIT",
+                                             "userType": "ISSADMIN",
+                                             "status": "A",
+                                             "lastUpdatedDate": "Wed Sep 30 14:40:48 UTC 2020",
+                                             "lastUpdatedBy": "WINZAWSIT"
+                                                 } ],
+                           "errorDetail": null
+                        },
+"KeysForValidationInResponse":["responseCode","errorDetail","roleId","roleDescription","userType","status","lastUpdatedDate","lastUpdatedBy","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA020",
+"Test Case Description":"Validate the response after providing valid cardId that is in state of block by fraudrule - BF",
+"RequestBody":{
+  "cardId": 2022040700859700952,
+  "remark": "The cardId is in block by fraudrule state",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"315",
+"ExpectedHTTPStatusCode":"200"
+}

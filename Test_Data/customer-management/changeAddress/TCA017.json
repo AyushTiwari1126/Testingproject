@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TCA017",
+"Test Case Description":"Validate the response after providing  invalid<br> postalCode  (alphabet String) in request body.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": 123123,
+    "address2": "bbb, Ithum",
+    "country": "India",
+    "state": "ASD",
+    "city": "Delhi",
+    "postalCode": "QA",
+    "phone": "123123",
+    "addressType":"P"
+  }
+},
+
+                      
+
+"ExpectedHTTPStatusCode":"400"
+
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA019",
+"Test Case Description":"Validate the response after pass the cardId in block by management state - BM",
+"RequestBody":{
+  "cardId": 2022112200877594599,
+  "remark": "The cardId is block by management state",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"307",
+"ExpectedHTTPStatusCode":"200"
+}

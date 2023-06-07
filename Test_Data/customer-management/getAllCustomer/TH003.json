@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TH003",
+"Test Case Description":"Validate the response with Authorization header value blank ",
+
+"ExpectedResponseBody":{
+    "timestamp": "2023-02-15T05:22:46.409+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/customer-info/v1.0/getAllCustomers"
+},
+
+"ExpectedHTTPStatusCode":"401"
+}

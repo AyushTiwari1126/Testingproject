@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TDS009",
+"Test Case Description":"Validate response after providing valid headers with request body (takes all nodes as blank)",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": ""
+  },
+  "Status": {
+    "statusCode": ""
+  }
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Exception occurred while validating the Department Id406 NOT_ACCEPTABLE \"Field not Found\""
+        ]
+    },
+    "responseCode": "236"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

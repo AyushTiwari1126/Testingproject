@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TH004",
+"Test Case Description":"Validate the response without ReqDatetime header.",
+
+"RequestBody":{
+                "applicationStatus": "AU"
+              },
+"ExpectedResponseBody":{
+    "timestamp": "2023-03-24T04:36:37.591+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/replacement/v1.0/getCardReplacementApplication"
+},
+
+"ExpectedHTTPStatusCode":"500"
+}

@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TDS008",
+"Test Case Description":"Validate response after providing the request body (pass special characters which we are used to create department)",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "#@"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "#@",
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","status","errordetail"],
+"ExpectedDeptId":"#@",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

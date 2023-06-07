@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"Validate the response with Sign header value blank ",
+
+"RequestBody":{
+                    "name": "HafizL",
+                    "mobileNo": "60112233497",
+                    "email": "winzawoo1978@wirecard.com"
+              },
+
+
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,42 @@
+{
+"TestCaseid":"TGCBN008",
+"Test Case Description":"Validate the response when we pass diferent (case sensetive) in customerName in request body.",
+
+"RequestBody":{
+               
+                "customerName": "HAFIZV"
+              },
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "customerId": "C1202086160082987",
+            "customerName": "HafizV",
+            "surnameName": "Halim",
+            "dob": "Sat Jun 29 00:00:00 UTC 1985",
+            "nationality": "Singaporean",
+            "gender": null,
+            "email": "yusheng.lee@wirecard.com",
+            "mobileNo": "0",
+            "status": 0,
+            "lastUpdatedDate": "Mon Dec 02 00:00:00 UTC 2019"
+        },
+        {
+            "customerId": "C1107377840082514",
+            "customerName": "HafizVV",
+            "surnameName": "Halim",
+            "dob": "Fri Oct 10 00:00:00 UTC 1980",
+            "nationality": "MY",
+            "gender": null,
+            "email": "hafizz08+2011@gmail.com",
+            "mobileNo": "0",
+            "status": 0,
+            "lastUpdatedDate": "Thu Nov 07 00:00:00 UTC 2019"
+        }
+    ],
+    "errorDetail": null
+},
+                      
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

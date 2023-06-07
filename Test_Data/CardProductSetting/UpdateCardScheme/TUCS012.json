@@ -1,0 +1,32 @@
+{
+"TestCaseid":"TUCS012",
+"Test Case Description":"Validation for the length of checkDigitType value after passing with more than 16-characters",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debit Card",
+    "cardScheme": "VI",
+    "bin": "400000",
+    "binLength": "6",
+    "settlementBin": "400000",
+    "cardNoLength": "16",
+    "lowRange": "0030",
+    "highRange": "0079",
+    "lowRangePosition": "7",
+    "cardNextValue": "0062",
+    "checkDigitType": "MOD10MOD10MOD10MOD10"
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            "\n### Error updating database.  Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CARD_TYPE\".\"CHECK_DIGIT_TYPE\" (actual: 20, maximum: 16)\n\n### The error may exist in com/wowcard/wowfinstack/wowdb/dao/CardTypeMapper.java (best guess)\n### The error may involve com.wowcard.wowfinstack.wowdb.dao.CardTypeMapper.update-Inline\n### The error occurred while setting parameters\n### SQL: update CARD_TYPE set CARD_TYPE_DESC = ?, CARD_SCHEME = ?, BIN = ?, BIN_LENGTH = ?, SETTLEMENT_BIN = ?, CARD_NO_LENGTH = ?, CHECK_DIGIT_TYPE = ?, LOW_RANGE_POSITION = ?, LOW_RANGE = ?, HIGH_RANGE = ?, CARD_NEXT_VALUE = ?, LAST_UPDATED_BY = ?, LAST_UPDATED_DATE = ? where CARD_TYPE_ID = ? and ISSUER_ID = ?\n### Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CARD_TYPE\".\"CHECK_DIGIT_TYPE\" (actual: 20, maximum: 16)\n"
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

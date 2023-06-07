@@ -1,0 +1,11 @@
+{
+"TestCaseid":"TGCA004",
+"Test Case Description":"Validate the response after providing request body without customerId node.",
+
+"RequestBody":{
+                
+              },
+
+"ExpectedHTTPStatusCode":"400"
+
+}

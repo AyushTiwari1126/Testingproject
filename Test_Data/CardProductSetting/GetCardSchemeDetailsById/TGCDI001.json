@@ -1,0 +1,27 @@
+{
+"TestCaseid":"TGCDI001",
+"Test Case Description":"Validate the response for valid cardSchemeId with valid headers",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardSchemeDesc": null,
+        "cardScheme": "MC",
+        "bin": "520473",
+        "binLength": "6",
+        "settlementBin": "520473",
+        "cardNoLength": "16",
+        "lowRange": "0000",
+        "highRange": "1000",
+        "lowRangePosition": "7",
+        "cardNextValue": "001",
+        "checkDigitType": "MOD10"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardSchemeDesc","bin","binLength","settlementBin","cardNoLength","lowRange","highRange","lowRangePosition","cardNextValue","checkDigitType","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,27 @@
+{
+"TestCaseid":"TUCS007",
+"Test Case Description":"Validation for taking the same lowRange and highRange values",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debt",
+    "cardScheme": "RP",
+    "bin": "437217",
+    "binLength": "6",
+    "settlementBin": "437217",
+    "cardNoLength": "16",
+    "lowRange": "0033",
+    "highRange": "0033",
+    "lowRangePosition": "7",
+    "cardNextValue": "0212",
+    "checkDigitType": "MOD10"
+  }
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

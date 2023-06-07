@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TTC020",
+"Test Case Description":"Validate response for passing the empty request body without any node",
+"RequestBody":{},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "card id validation error"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

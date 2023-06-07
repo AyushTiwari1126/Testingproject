@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TTC006",
+"Test Case Description":"To validate the response after providing the cardId whose card is in Lost card 41 state - LC41",
+"RequestBody":{
+  "cardId": 201910310844590091,
+  "transactionType": "3",
+  "status": "N",
+  "remarks": "lostcard41 with disabled the international transactionType "
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

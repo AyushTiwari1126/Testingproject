@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TDS002",
+"Test Case Description":"Validate the response after passing the invalid departmentId (non-existent departmentId)",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "5"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Invalid Department id: 5"
+        ]
+    },
+    "responseCode": "236"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedDeptId":"5",
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TGCBI007",
+"Test Case Description":"Validate the response when we pass valid length (max +1=21)string in  request body",
+
+"RequestBody":{
+               "customerId": "AAAAAAAAAAAAAAAAAAAAA"
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGCBN002",
+"Test Case Description":"Validate the response after providing  issuerId with customerName  (which not belongs to that issuerId)",
+
+"RequestBody":{
+                "customerName": "Abhishek Tiwari"
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "Requested Data Not Available",
+                           "Customer name did not exist"
+                                           ]
+                      },
+                      "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

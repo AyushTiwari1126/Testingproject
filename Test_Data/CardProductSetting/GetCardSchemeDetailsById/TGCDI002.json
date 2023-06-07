@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TGCDI002",
+"Test Case Description":"To validate the response after passing the invalid cardSchemeId (which is not present into the database)",
+"RequestBody":{
+  "cardSchemeId": "34"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "Invalid card Scheme Id "
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TGCIBF016",
+"Test Case Description":"Validate the response after providing spaces in name node value in request body ",
+
+"RequestBody":{
+                 "name": "     ",
+                 "mobileNo": "60112233497",
+                 "email": "winzawoo1978@wirecard.com"
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Internal Server Error",
+                          "Exception occurred while getting CustomerInfoByFilter from database"
+                                          ]
+                                         },
+                          "responseCode": "101"
+                       },
+                       
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

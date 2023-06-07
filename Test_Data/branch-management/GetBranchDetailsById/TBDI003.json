@@ -1,0 +1,11 @@
+{
+"TestCaseid":"TBDI003",
+"Test Case Description":"Validate response for valid header without any node in request body",
+"RequestBody":{},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

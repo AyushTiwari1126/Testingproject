@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TTC012",
+"Test Case Description":"Validate the response after pass the cardId in block by management state - BM",
+"RequestBody":{
+  "cardId": 2022112200877594599,
+  "transactionType": "2",
+  "status": "Y",
+  "remarks": "block by management with enabled the domestic transactionType"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"307",
+"ExpectedHTTPStatusCode":"200"
+}

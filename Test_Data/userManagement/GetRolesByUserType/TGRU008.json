@@ -1,0 +1,11 @@
+{
+"TestCaseid":"TGRU008",
+"Test Case Description":"Validate the response after providing blank value in userType node in request body",
+"RequestBody":{
+                  "userType":""
+              },
+
+                       
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TBDI006",
+"Test Case Description":"Validate the response after providing valid headers with blank branchId",
+"RequestBody":{
+  "branchId": ""
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

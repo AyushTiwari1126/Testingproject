@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGTCS004",
+"Test Case Description":"To validate the response for cardId from Closed card state with Domestic transaction Type",
+"RequestBody":{
+  "cardId": 2020050400850899360,
+  "transactionType": "2"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null,
+    "cardId": 2020050400850899360,
+    "transactionType": "2",
+    "status": "N"
+},
+"KeysForValidationInResponse":["responseCode","cardId","transactionType","status","errorDetail"],
+"ExpectedCardID":2020050400850899360,
+"ExpectedtransactionType":"2",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

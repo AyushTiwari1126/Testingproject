@@ -1,0 +1,10 @@
+{
+
+"AuthKey1":"ReqDatetime:System Generated",
+"AuthKey2":"Sign: ",
+"AuthKey3":"Authorization:System Generated",
+
+
+
+"ExpectedHTTPStatusCode":"400"
+}

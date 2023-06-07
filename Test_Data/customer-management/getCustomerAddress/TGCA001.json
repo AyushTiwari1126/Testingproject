@@ -1,0 +1,40 @@
+{
+"TestCaseid":"TGCA001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+
+"RequestBody":{
+                 "customerId": "C1202086160082987"
+              },
+"ExpectedResponseBody":{
+                              "responseCode": "000",
+                              "responseData": [
+                                                {
+                                                 "address1": "302 11290",
+                                                 "address2": "Pasir Panjang Road",
+                                                 "country": "JM",
+                                                 "state": "Western",
+                                                 "city": "Serangoon",
+                                                 "postalCode": 550302,
+                                                 "phone": null,
+                                                 "addressType": "H"
+                                                 
+                                               },
+                                              {
+                                                  "address1": null,
+                                                  "address2": null,
+                                                  "country": "KH",
+                                                  "state": null,
+                                                  "city": null,
+                                                  "postalCode": 0,
+                                                  "phone": null,
+                                                  "addressType": "C"
+                                                 
+                                              }
+                                              ],
+                                             "errorDetail": null
+                         },
+"KeysForValidationInResponse":["responseCode","responseData","address1","address2","country","state","city","postalCode","phone","addressType"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+
+}

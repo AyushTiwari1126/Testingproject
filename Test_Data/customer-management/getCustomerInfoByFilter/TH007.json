@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TH007",
+"Test Case Description":"Validate the response after providing  all header  without value ",
+
+"RequestBody":{
+                    "name": "HafizL",
+                    "mobileNo": "60112233497",
+                    "email": "winzawoo1978@wirecard.com"
+              },
+"ExpectedResponseBody":{
+                          "timestamp": "2023-01-13T05:16:36.770+00:00",
+                          "status": 401,
+                          "error": "Unauthorized",
+                          "path": "/customer-info/v1.0/getCusomterByName"
+                       },
+"ExpectedHTTPStatusCode":"401"
+}

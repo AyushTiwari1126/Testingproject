@@ -1,0 +1,27 @@
+{
+"TestCaseid":"TB006",
+"Test Case Description":"Validate the response after providing more than max(12) limit of characters into the IssuerID",
+"RequestBody":{
+  "branchName": "himalayaTanishq",
+  "issuerId": "Issuer12345168800",
+  "address1": "FC-26, zero pusta Rd",
+  "address2": "Shastri Park, Shahdara",
+  "state": "Delhi",
+  "countryCode": "IN",
+  "city": "New Delhi",
+  "postalCode": 110053,
+  "contactPerson": "Sanjay Kumar",
+  "emailId": "shastripark.delhi@gmail.com",
+  "phoneNo": "11005311",
+  "accessAllBranch": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 46973",
+        "branchId": "46973"
+    },
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

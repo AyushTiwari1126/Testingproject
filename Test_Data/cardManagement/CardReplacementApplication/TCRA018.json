@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TCRA018",
+"Test Case Description":"Validate the response after passing the cardId which is present in state of Lost card - LC",
+"RequestBody":{
+  "cardId": 2020020300848508869,
+  "remark": "Lost card",
+  "instantReplacement": "Y"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

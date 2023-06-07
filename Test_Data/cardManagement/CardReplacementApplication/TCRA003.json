@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA003",
+"Test Case Description":"Validate the response after providing the cardId that is present in the state of Inactive Card",
+"RequestBody":{
+  "cardId": 2020031100849419156,
+  "remark": "Card is in Inactive state",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"302",
+"ExpectedHTTPStatusCode":"200"
+}

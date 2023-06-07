@@ -1,0 +1,26 @@
+{
+"TestCaseid":"TUCS003",
+"Test Case Description":"Validate response after change BinLength from 6 to 7 or more than 6",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Health Card",
+    "cardScheme": "RP",
+    "bin": "437217",
+    "binLength": "8",
+    "settlementBin": "437217",
+    "cardNoLength": "16",
+    "lowRange": "0030",
+    "highRange": "0276",
+    "lowRangePosition": "9",
+    "cardNextValue": "0212",
+    "checkDigitType": "MOD10"
+  }
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

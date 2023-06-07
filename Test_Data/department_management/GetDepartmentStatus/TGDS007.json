@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TGDS007",
+"Test Case Description":"To validate the response after pass spaces only into the departmentId",
+"RequestBody":{
+  "departmentId": " "
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "Department Id does not exist"
+        ]
+    },
+    "responseCode": "110"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

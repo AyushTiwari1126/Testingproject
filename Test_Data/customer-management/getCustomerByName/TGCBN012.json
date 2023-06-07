@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TGCBN012",
+"Test Case Description":"Validate the response when we pass invalid customer string length(max+1=61) in customerName node.",
+
+"RequestBody":{
+  "customerName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+},
+
+"ExpectedHTTPStatusCode":"400"
+}

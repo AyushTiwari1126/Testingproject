@@ -1,0 +1,12 @@
+{
+"TestCaseid":"TGCBS016",
+"Test Case Description":"validate the response after providing blank body in request",
+
+"RequestBody":{
+                
+              },
+
+
+"ExpectedHTTPStatusCode":"400"
+
+}

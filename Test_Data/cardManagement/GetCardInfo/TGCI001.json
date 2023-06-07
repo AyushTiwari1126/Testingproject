@@ -1,0 +1,30 @@
+{
+"TestCaseid":"TGCI001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+
+"RequestBody":{
+                  "cardId": 2019110400844837739
+              },
+"ExpectedResponseBody":{
+                         "responseCode": "000",
+                         "responseData": {
+                         "cardId": 2019110400844837739,
+                         "customerId": "C1104171950082289",
+                         "issuerId": null,
+                         "status": "NUMBER_0",
+                         "accountId": "AC1104172020082289",
+                         "cardProductId": "000",
+                         "expDate": null,
+                         "billingDate": "null",
+                         "creditLimitPercent": 100,
+                         "cashLimitPercent": 90,
+                         "cardholderType": 1,
+                         "maskedCardNo": "100971XXXX007739"
+                       },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardId","customerId","issuerId","status","accountId","cardProductId","expDate","billingDate","creditLimitPercent","cashLimitPercent","cardholderType","maskedCardNo","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200",
+"ExpectedcardId":"2019110400844837739"
+}

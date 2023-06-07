@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TBS004",
+"Test Case Description":"Validate response after providing valid headers with valid request body (to deactivate the branch status : 'D')",
+"RequestBody":{
+  "issuerBranchId": {
+    "branchId": "23432"
+  },
+  "Status": {
+    "statusCode": "D"
+  }
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 23432",
+        "departmentId": null,
+        "status": "D"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","responseText","departmentId","status","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

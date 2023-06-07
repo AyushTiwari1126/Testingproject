@@ -1,0 +1,5 @@
+{
+"TestCaseid":"TH003",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes authorization as blank)",
+"KeysForValidationInResponse":["status"]
+}

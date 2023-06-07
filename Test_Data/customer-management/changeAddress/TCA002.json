@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCA002",
+"Test Case Description":"Validate the response after providing <br>blank customerId with valid request body",
+
+"RequestBody":{
+                "customerId": "",
+                "newAddress": {
+                "address1": "Z, Ithum",
+                "address2": "bbb, Ithum",
+                "country": "India",
+                "state": "Delhi",
+                "city": "Delhi",
+                "postalCode": 8,
+                "phone": "0120 3203939",
+                "addressType": "P"
+                              }
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Customer Not Available",
+                          "Invalid Customer Id"
+                                          ]
+                                         },
+                          "responseCode": "202"
+                       },
+                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

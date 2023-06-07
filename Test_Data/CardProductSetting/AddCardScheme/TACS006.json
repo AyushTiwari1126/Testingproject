@@ -1,0 +1,29 @@
+{
+"TestCaseid":"TACS006",
+"Test Case Description":"Validation for the response after providing the cardScheme with 3-digit value",
+"RequestBody":{
+  "tlementBin": "string",
+  "cardSchemeDesc": "TACT006 TEstcase",
+  "cardScheme": "VIS",
+  "bin": "3095",
+  "binLength": "4",
+  "settlementBin": "3095",
+  "cardNoLength": "16",
+  "lowRange": "135204",
+  "highRange": "634553",
+  "lowRangePosition": "5",
+  "cardNextValue": "135225",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            "\n### Error updating database.  Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CARD_TYPE\".\"CARD_SCHEME\" (actual: 3, maximum: 2)\n\n### The error may exist in com/wowcard/wowfinstack/wowdb/dao/CardTypeMapper.java (best guess)\n### The error may involve com.wowcard.wowfinstack.wowdb.dao.CardTypeMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: insert into CARD_TYPE (CARD_TYPE_ID, ISSUER_ID, CARD_TYPE_DESC, MK, PEK, KEK, LAST_UPDATED_DATE, LAST_UPDATED_BY, STATUS, BIN, BIN_LENGTH, CARD_NO_LENGTH, CARD_NEXT_VALUE, LOW_RANGE, HIGH_RANGE, LOW_RANGE_POSITION, CHECK_DIGIT_TYPE, SETTLEMENT_BIN, CARD_SCHEME) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n### Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CARD_TYPE\".\"CARD_SCHEME\" (actual: 3, maximum: 2)\n"
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

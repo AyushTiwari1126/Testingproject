@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TD002",
+"Test Case Description":"To validate the response after passing the already existing departmentId",
+"RequestBody":{
+  "departmentId": "10",
+  "departmentDesc": "HR Department",
+  "status": "A"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Duplicate Ref. No",
+            "Getting error while creating new department as Department Id is already present in database"
+        ]
+    },
+    "responseCode": "113"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedResponseCode":"201",
+"ExpectedHTTPStatusCode":"NA"
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA017",
+"Test Case Description":"To validate the response for passing the cardId that is present in  Deceased State - CD",
+"RequestBody":{
+  "cardId": 2022122100882576768,
+  "remark": "This is the deceased cardId",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"\"Not-Defined for Deceased(CD) CardState\"",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCBS018",
+"Test Case Description":"Validate the response after providing spaces in status node of request body",
+
+"RequestBody":{
+                "status": "  "
+              },
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "Status Code is empty"
+        ]
+    },
+    "responseCode": "103"
+},
+                       
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

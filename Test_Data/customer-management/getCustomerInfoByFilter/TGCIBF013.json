@@ -1,0 +1,35 @@
+{
+"TestCaseid":"TGCIBF013",
+"Test Case Description":"Validate the response after providing blank value in email node of request body.",
+
+"RequestBody":{
+                 "name": "HafizL",
+                 "mobileNo": "60112233497",
+                 "email": ""
+              },
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "customerId": "C0205131900083507",
+            "customerName": "HafizL",
+            "surnameName": "Halim",
+            "dob": "Sat Jun 29 00:00:00 UTC 1985",
+            "nationality": "Singaporean",
+            "gender": null,
+            "email": "winzawoo1978@wirecard.com",
+            "mobileNo": "60112233497",
+            "status": 0,
+            "lastUpdatedDate": "Wed Feb 05 00:00:00 UTC 2020"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","customerId","customerName","surnameName","dob","nationality","gender","email","mobileNo","status","lastUpdatedDate","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200",
+"ExpectedcustomerName":"HafizL",
+"ExpectedcustomerMobileNo":"60112233497",
+"ExpectedcustomorEmail":"winzawoo1978@wirecard.com"
+
+}

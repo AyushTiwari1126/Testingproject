@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TACS017",
+"Test Case Description":"To validate the response after passing the spaces only in the values of all nodes",
+"RequestBody":{
+  "tlementBin": "  ",
+  "cardSchemeDesc": "  ",
+  "cardScheme": "  ",
+  "bin": "  ",
+  "binLength": "  ",
+  "settlementBin": "  ",
+  "cardNoLength": "  ",
+  "lowRange": "   ",
+  "highRange": "   ",
+  "lowRangePosition": " ",
+  "cardNextValue": "   ",
+  "checkDigitType": "   "
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

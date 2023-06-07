@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate the response with ReqDatetime header value blank",
+
+"RequestBody":{
+                     "productId": "33"
+              },
+"ExpectedResponseBody":{
+                           "timestamp": "2023-03-13T04:31:56.097+00:00",
+                           "status": 500,
+                           "error": "Internal Server Error",
+                           "path": "/card-generation/v1.0/generateCard"
+                       },
+"ExpectedHTTPStatusCode":"500"
+}

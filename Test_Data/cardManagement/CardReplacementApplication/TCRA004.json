@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA004",
+"Test Case Description":"Validate the response after passing  the cardId that is in state of blocked temporarily",
+"RequestBody":{
+  "cardId": 2020062100852680266,
+  "remark": "Temporarily Blocked state card",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"306",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA014",
+"Test Case Description":"To validate the response after passing the cardId (that is already in replaced card state - CR)",
+"RequestBody":{
+  "cardId": 2019102400843867630,
+  "remark": "Already replaced card",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"309",
+"ExpectedHTTPStatusCode":"200"
+}

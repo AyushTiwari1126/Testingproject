@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TDS004",
+"Test Case Description":"To validate the response after providing valid request body (to deactivate the branch status : 'D')",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "14"
+  },
+  "Status": {
+    "statusCode": "D"
+  }
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "14",
+        "status": "D"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","status","errorDetail"],
+"ExpectedDeptstatus":"D",
+"ExpectedDeptId":"14",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

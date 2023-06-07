@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TH004",
+"Test Case Description":"Validate the response without ReqDatetime header ",
+
+
+"ExpectedResponseBody":{
+                         "timestamp": "2023-02-15T05:18:55.826+00:00",
+                         "status": 500,
+                         "error": "Internal Server Error",
+                         "path": "/customer-info/v1.0/getAllCustomers"
+                      },
+
+"ExpectedHTTPStatusCode":"500"
+}

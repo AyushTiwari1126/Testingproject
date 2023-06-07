@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TGCBN003",
+"Test Case Description":"Validate the response without customerName node in request body",
+
+"RequestBody":{
+                 
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}

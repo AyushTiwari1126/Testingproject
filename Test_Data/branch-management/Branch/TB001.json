@@ -1,0 +1,29 @@
+{
+"TestCaseid":"TB001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"RequestBody":{
+  "branchName": "Shastri Park",
+  "issuerId": "Issuer1",
+  "address1": "FC-26, zero pusta Rd",
+  "address2": "Shastri Park, Shahdara",
+  "state": "Delhi",
+  "countryCode": "IN",
+  "city": "New Delhi",
+  "postalCode": 110053,
+  "contactPerson": "Sanjay Kumar",
+  "emailId": "shastripark.delhi@gmial.com",
+  "phoneNo": "11005311",
+  "accessAllBranch": "Y"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 70180",
+        "branchId": "70180"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","responseText","branchId","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGC018",
+"Test Case Description":"Validate the response after providing spaces in  productId node in request body",
+
+"RequestBody":{
+                     "productId": " "
+              },
+"ExpectedResponseBody":{
+                               "errorDetail": {
+                               "errorMessage": [
+                              "Validation Error",
+                                "validation failed for generateCard productId validation"
+                                               ]
+                                              },
+                               "responseCode": "103"
+                        },
+                       
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

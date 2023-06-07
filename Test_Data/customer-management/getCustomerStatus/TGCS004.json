@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCS004",
+"Test Case Description":"Validate the response after providing spaces in customerId node",
+
+"RequestBody":{
+                "customerId": "    "
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Requested Data Not Available",
+                          "Customer does not exist"
+                                          ]
+                                        },
+                          "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

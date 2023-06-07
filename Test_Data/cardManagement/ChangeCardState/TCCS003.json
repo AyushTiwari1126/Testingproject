@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCCS003",
+"Test Case Description":"To validate the response after passing the cardId change from Replaced state to Lost card state",
+"RequestBody":{
+  "cardId": 2022091300866391868,
+  "remarks": "Card state change from replaced card state to lost card state",
+  "status": "LC"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardId": 2022091300866391868,
+        "customerId": "C0913423120106538",
+        "issuerId": null,
+        "status": "NUMBER_10",
+        "accountId": "AC0913421410106539",
+        "cardProductId": "000",
+        "expDate": null,
+        "billingDate": "null",
+        "creditLimitPercent": 100,
+        "cashLimitPercent": 90,
+        "cardholderType": 1,
+        "maskedCardNo": "100971XXXX001868"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardId","customerId","issuerId","status","accountId","cardProductId","billingDate","creditLimitPercent","cardholderType","maskedCardNo","errorDetail"],
+"ExpectedCardId":2022091300866391868,
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

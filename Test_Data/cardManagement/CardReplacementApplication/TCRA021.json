@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA021",
+"Test Case Description":"To validate the response for providing the cardId that is present in state of Suspect Fraud - SF",
+"RequestBody":{
+  "cardId": 2022122000882196487,
+  "remark": "Suspect Fraud CardId",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"311",
+"ExpectedHTTPStatusCode":"200"
+}

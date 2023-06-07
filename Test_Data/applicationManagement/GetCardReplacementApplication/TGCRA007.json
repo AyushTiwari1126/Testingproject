@@ -1,0 +1,12 @@
+{
+"TestCaseid":"TGCRA007",
+"Test Case Description":"Validate the response after providing blank applicationStatus node in request body",
+
+"RequestBody":{
+                "applicationStatus": ""
+              },
+
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

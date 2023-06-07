@@ -1,0 +1,33 @@
+{
+"TestCaseid":"TBDN001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"RequestBody":{
+  "branchName": "Mumbai"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "branchId": "32423",
+            "branchName": "Mumbai",
+            "address1": "lokhande",
+            "address2": "lokhande",
+            "city": "SG",
+            "state": "Maharastra",
+            "country": "SG",
+            "postalCode": 12323,
+            "contactPerson": "Manish kumar",
+            "phoneNo": "34324234",
+            "accessAllBranch": "N",
+            "userType": null,
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Wed Jul 27 09:00:32 UTC 2022"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","branchId","branchName","address1","address2","city","state","country","postalCode","contactPerson","phoneNo","accessAllBranch","userType","lastUpdatedBy","lastUpdatedDate","errorDetail"],                     
+"ExpectedBranchName":"Mumbai",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,14 @@
+{
+
+"AuthKey1":"ReqDatetime:System Generated",
+"AuthKey2":"Sign: ",
+"AuthKey3":"Authorization: ",
+
+"ExpectedResponseBody":{
+                           "timestamp": "2023-01-11T11:44:35.270+00:00",
+                           "status": 401,
+                           "error": "Unauthorized"
+                          
+                       },
+"ExpectedHTTPStatusCode":"401"
+}

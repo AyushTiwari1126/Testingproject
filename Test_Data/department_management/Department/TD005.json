@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TD005",
+"Test Case Description":"Validate the response for request body (pass max+1 (31-chars into departmentDesc)",
+"RequestBody":{
+  "departmentId": "System Generated DepartmentId",
+  "departmentDesc": "System Generated DepartmentDesc",
+  "status": "A"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Duplicate Ref. No",
+            "Getting error while creating new department as Department Id is already present in database"
+        ]
+    },
+    "responseCode": "113"
+},
+"ExpectedHTTPStatusCode":"400"
+}

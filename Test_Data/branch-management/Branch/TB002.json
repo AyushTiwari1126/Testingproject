@@ -1,0 +1,29 @@
+{
+"TestCaseid":"TB002",
+"Test Case Description":"To validate the response after providing all the data with already existing branchName",
+"RequestBody":{
+  "branchName": "Shastri Park",
+  "issuerId": "Issuer1",
+  "address1": "Block-F, Gali no-6",
+  "address2": "Shastri Park, Shahdara",
+  "state": "Delhi",
+  "countryCode": "IN",
+  "city": "New Delhi",
+  "postalCode": 110053,
+  "contactPerson": "vijay",
+  "emailId": "shastripark.blockf@gmial.com",
+  "phoneNo": "11015311",
+  "accessAllBranch": "Y"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 55298",
+        "branchId": "55298"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","responseText","branchId","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

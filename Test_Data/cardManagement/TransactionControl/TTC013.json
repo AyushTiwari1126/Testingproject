@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TTC013",
+"Test Case Description":"Validate the response after providing valid cardId that is in state of block by fraudrule - BF",
+"RequestBody":{
+  "cardId": 2022040700859700952,
+  "transactionType": "3",
+  "status": "N",
+  "remarks": "blockd by fraudrule card with disabled the international transactionType"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"315",
+"ExpectedHTTPStatusCode":"200"
+}

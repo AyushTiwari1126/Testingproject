@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TGCIBF003",
+"Test Case Description":"Validate the response without providing  name node in request body .",
+"RequestBody":{
+                  "mobileNo": "60112233497",
+                  "email": "winzawoo1978@wirecard.com"
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Internal Server Error",
+                          "Exception occurred while getting CustomerInfoByFilter from database"
+                                          ]
+                                         },
+                          "responseCode": "101"
+                       },                
+"ExpectedResponseCode":"101",
+"ExpectedHTTPStatusCode":"500"
+}

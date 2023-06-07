@@ -1,0 +1,26 @@
+{
+"TestCaseid":"TACS007",
+"Test Case Description":"To validate the response when we pass the  cardNextValue smaller than the lowRange value",
+"RequestBody":{
+  "cardTypeDesc": "TACT007 testcase",
+  "cardScheme": "VI",
+  "bin": "434576",
+  "binLength": "6",
+  "settlementBin": "434576",
+  "cardNoLength": "16",
+  "lowRange": "135204",
+  "highRange": "634553",
+  "lowRangePosition": "5",
+  "cardNextValue": "102700",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardSchemeId": "85"
+    },
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

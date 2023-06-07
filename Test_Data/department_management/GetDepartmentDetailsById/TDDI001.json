@@ -1,0 +1,26 @@
+{
+"TestCaseid":"TDDI001",
+"Test Case Description":"Validate the response for valid testcases with valid headers",
+"RequestBody":{
+  "departmentId": "1"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "departmentId": "1",
+            "departmentDesc": "Admin Department",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Tue Feb 04 09:31:08 UTC 2020"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","departmentDesc","issuerId","status","lastUpdatedBy","lastUpdatedDate","errorDetail"],
+"ExpectedDeptstatus":"A",
+"ExpectedDeptId":"1",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

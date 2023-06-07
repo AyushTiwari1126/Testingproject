@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate the response with ReqDatetime header value blank",
+
+"RequestBody":{
+                    "name": "HafizL",
+                    "mobileNo": "60112233497",
+                    "email": "winzawoo1978@wirecard.com"
+              },
+"ExpectedResponseBody":{
+                          "timestamp": "2023-01-30T08:01:24.920+00:00",
+                          "status": 500,
+                          "error": "Internal Server Error",
+                          "path": "/customer-info/v1.0/getCustomerInfoByFilter"
+                       },
+"ExpectedHTTPStatusCode":"500"
+}

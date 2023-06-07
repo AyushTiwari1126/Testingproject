@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGTCS007",
+"Test Case Description":"To validate the response for passing spaces  only in transactionType with valid cardId",
+"RequestBody":{
+  "cardId": 2019110400844837739,
+  "transactionType": " "
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

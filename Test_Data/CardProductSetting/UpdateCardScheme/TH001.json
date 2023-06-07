@@ -1,0 +1,27 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes ReqDatetime as blank)",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debit Card",
+    "cardScheme": "VI",
+    "bin": "400000",
+    "binLength": "6",
+    "settlementBin": "400000",
+    "cardNoLength": "16",
+    "lowRange": "0079",
+    "highRange": "0079",
+    "lowRangePosition": "7",
+    "cardNextValue": "001",
+    "checkDigitType": "MOD10"
+  }
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:50:28.511+00:00",
+    "status": 500,
+    "error": "Internal Server Error"
+},
+"ExpectedHTTPStatusCode":"500"
+}

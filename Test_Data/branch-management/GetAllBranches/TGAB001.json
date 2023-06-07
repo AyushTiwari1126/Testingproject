@@ -1,0 +1,45 @@
+{
+"TestCaseid":"TGAB001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "branchId": "23432",
+            "branchName": "uiyuh",
+            "address1": "frrgf",
+            "address2": "yuguyg",
+            "city": "SG",
+            "state": "yuhuhu",
+            "country": "SG",
+            "postalCode": 12334,
+            "contactPerson": "sferfer",
+            "phoneNo": "3453543543",
+            "accessAllBranch": "N",
+            "userType": null,
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Thu Jul 28 10:22:40 UTC 2022"
+        },
+        {
+            "branchId": "49199",
+            "branchName": "South Delhi.",
+            "address1": "C 406, Ithum",
+            "address2": "Sector 62",
+            "city": "Noida",
+            "state": "Uttar Pradesh",
+            "country": "IN",
+            "postalCode": 550302,
+            "contactPerson": null,
+            "phoneNo": "90060940",
+            "accessAllBranch": "Y",
+            "userType": null,
+            "lastUpdatedBy": "ADMIN1",
+            "lastUpdatedDate": "Tue Aug 16 13:50:49 UTC 2022"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","branchId","branchName","address1","address2","city","state","country","postalCode","contactPerson","phoneNo","accessAllBranch","userType","lastUpdatedBy","lastUpdatedDate","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TGAR002",
+"Test Case Description":"Validate the response with all valid headers ASP",
+
+
+"ExpectedResponseBody":{
+                          "responseCode": "000",
+                          "responseData": [
+                                      {
+                                       "roleId": "RKIssuer",
+                                       "roleDescription": "RkUssuer",
+                                       "userType": "ASPADMIN",
+                                       "status": "A",
+                                       "lastUpdatedDate": "Sun Jan 23 13:12:29 UTC 2022",
+                                       "lastUpdatedBy": "ASPSUPERADMIN"
+                                      }
+                                          ],
+                         "errorDetail": null
+                      },
+"KeysForValidationInResponse":["responseCode","responseData","roleId","roleDescription","userType","status","lastUpdatedDate","lastUpdatedBy"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

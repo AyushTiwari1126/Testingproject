@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TDS007",
+"Test Case Description":"To validate the response after providing the float/double typed value into departmentId",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": 1.0
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Invalid Department id: 1.0"
+        ]
+    },
+    "responseCode": "236"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedDeptId":"1.0",
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

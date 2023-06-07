@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TGCIBF014",
+"Test Case Description":"Validate the response after providing name ,mobileNo,email value blank in request body ",
+
+"RequestBody":{
+                
+                   "name": "",
+                   "mobileNo": "",
+                   "email": ""
+ 
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Internal Server Error",
+                          "Exception occurred while getting CustomerInfoByFilter from database"
+                                          ]
+                                         },
+                          "responseCode": "101"
+                       },
+                       
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

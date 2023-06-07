@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TDS011",
+"Test Case Description":"To validate the response for passing length more than 2 characters into departmentId",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "514"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedHTTPStatusCode":"400"
+}

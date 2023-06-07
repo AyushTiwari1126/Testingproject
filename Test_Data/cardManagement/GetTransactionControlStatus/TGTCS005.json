@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGTCS005",
+"Test Case Description":"To validate the status for the cardID from Lost Card state with International transactionType",
+"RequestBody":{
+  "cardId": 2021042600856700845,
+  "transactionType": "3"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null,
+    "cardId": 2021042600856700845,
+    "transactionType": "3",
+    "status": "N"
+},
+"KeysForValidationInResponse":["responseCode","cardId","transactionType","status","errorDetail"],
+"ExpectedCardID":2021042600856700845,
+"ExpectedtransactionType":"3",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

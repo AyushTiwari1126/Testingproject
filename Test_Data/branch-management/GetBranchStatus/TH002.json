@@ -1,0 +1,8 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"To validate the response after providing valid request body with headers (takes sign as blank)",
+"RequestBody":{
+	"branchId": "00"
+},
+"ExpectedHTTPStatusCode":"400"
+}

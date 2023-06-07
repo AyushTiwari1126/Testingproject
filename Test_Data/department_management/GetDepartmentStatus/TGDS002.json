@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGDS002",
+"Test Case Description":"To validate the response after passing the invalid departmentId (which is not present into the database)",
+"RequestBody":{
+  "departmentId": "50"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "Department Id does not exist"
+        ]
+    },
+    "responseCode": "110"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

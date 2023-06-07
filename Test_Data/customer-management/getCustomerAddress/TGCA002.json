@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGCA002",
+"Test Case Description":"Validate the response after providing invalid  customerId(not present on server) in request body",
+
+"RequestBody":{
+                 "customerId": "C1231231231231231"
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "DataBase error occurred while inserting the records into DB",
+                           "DB error while fetching the Customer Address."
+                                           ]
+                                          },
+                           "responseCode": "701"
+                       },                      
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

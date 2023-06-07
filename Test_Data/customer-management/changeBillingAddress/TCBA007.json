@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TCBA007",
+"Test Case Description":"Validate the response after send same valid request double",
+"RequestBody":{
+                "customerId": "C1202086160082987",
+                "billingAddressType": "H"
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Internal Server Error",
+                         "billing address updation get failed"
+                                           ]
+                                        },
+                          "responseCode": "101"
+                      },
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

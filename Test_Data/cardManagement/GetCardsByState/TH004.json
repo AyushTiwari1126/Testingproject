@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TH004",
+"Test Case Description":"Validate the response without ReqDatetime header ",
+
+"RequestBody":{
+                  "status": "AC"
+              },
+"ExpectedResponseBody":{
+    "timestamp": "2023-02-22T07:15:06.116+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/card-info/v1.0/getCardsByState"
+},
+
+"ExpectedHTTPStatusCode":"500"
+}

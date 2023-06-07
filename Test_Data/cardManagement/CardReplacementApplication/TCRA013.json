@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TCRA013",
+"Test Case Description":"To validate the response after passing the blank request body without any node",
+"RequestBody":{},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "create card replacement application Failed "
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCCS007",
+"Test Case Description":"Validate the response after providing the cardId with length (max-1) and change into deceased state",
+"RequestBody":{
+  "cardId": 202211220087788488,
+  "remarks": "Pass value of cardId with length (max-1) and change to deceased card state",
+  "status": "CD"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "card id validation error"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

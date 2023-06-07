@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TH007",
+"Test Case Description":"Validate the response after providing  all header  without value ",
+
+"RequestBody":{
+                     
+                     "customerId": "C1202086160082987"
+              },
+"ExpectedResponseBody":{
+                         "timestamp": "2023-03-07T08:59:13.900+00:00",
+                         "status": 401,
+                         "error": "Unauthorized",
+                         "path": "/customer-info/v1.0/getCustomerStatus"
+                       },
+"ExpectedHTTPStatusCode":"401"
+}

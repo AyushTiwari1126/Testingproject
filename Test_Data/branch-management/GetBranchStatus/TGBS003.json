@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TGBS003",
+"Test Case Description":"Valiadte the response after providing valid headers with request body (pass invalid branchId)",
+"RequestBody":{},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Branch does not exist",
+            "Branch Id does not exist"
+        ]
+    },
+    "responseCode": "602"
+},
+"ExpectedHTTPStatusCode":"400"
+}

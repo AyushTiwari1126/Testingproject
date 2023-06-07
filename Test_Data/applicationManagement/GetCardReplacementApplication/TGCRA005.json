@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TGCRA005",
+"Test Case Description":"Validate the response after providing AU (Authorized) application status in request body.",
+
+"RequestBody":{
+                "applicationStatus": "AU"
+              },
+"ExpectedResponseBody":{
+                         "responseCode": "000",
+                         "responseData": [
+                                           {
+                                 "cardId": 2022050400860971059,
+                                 "applicationId": "A1227155660112993",
+                                 "reason": "test",
+                                 "appliedDate": "2022-12-27 12:13:23.0",
+                                 "instantReplacement": "N"
+                                            } ],
+                                 "errorDetail": null
+                       },
+"KeysForValidationInResponse":["responseCode","responseData","cardId","applicationId","reason","appliedDate","instantReplacement","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+
+}

@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TH004",
+"Test Case Description":"Validate response after providing valid request body with valid header (without reqDatetime header)",
+"RequestBody":{
+  "departmentId": "System Generated DepartmentId",
+  "departmentDesc": "System Generated DepartmentDesc",
+  "status": "A"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:50:28.511+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/branch-managment/v1.0/branch-status"
+},
+"ExpectedHTTPStatusCode":"500"
+}

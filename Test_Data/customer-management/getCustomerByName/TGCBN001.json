@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TGCBN001",
+"Test Case Description":"Validate the response after providing valid header with valid customerName in request body.",
+
+"RequestBody":{
+
+                "customerName": "HafizV"
+              },
+"ExpectedResponseBody":{
+                           "responseCode": "000",
+                           "responseData": [
+                                          {
+                                            "customerId": "C1202086160082987",
+                                            "customerName": "HafizV",
+                                            "surnameName": "Halim",
+                                            "dob": "Sat Jun 29 00:00:00 UTC 1985",
+                                            "nationality": "Singaporean",
+                                            "gender": null,
+                                            "email": "yusheng.lee@wirecard.com",
+                                            "mobileNo": "0",
+                                            "status": 0,
+                                            "lastUpdatedDate": "Mon Dec 02 00:00:00 UTC 2019"
+                                            }
+                                           ],
+                                            "errorDetail": null
+                                          },
+"KeysForValidationInResponse":["responseCode","responseData","customerId","customerName","surnameName","dob","nationality","gender","email","mobileNo","status","lastUpdatedDate","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200",
+"ExpectedcustomerName":"HafizV"
+}

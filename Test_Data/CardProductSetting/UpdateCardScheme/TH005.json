@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TH005",
+"Test Case Description":"Validate response after providing valid request body with valid header (without Sign header)",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debit Card",
+    "cardScheme": "VI",
+    "bin": "400000",
+    "binLength": "6",
+    "settlementBin": "400000",
+    "cardNoLength": "16",
+    "lowRange": "0079",
+    "highRange": "0079",
+    "lowRangePosition": "7",
+    "cardNextValue": "001",
+    "checkDigitType": "MOD10"
+  }
+},
+"ExpectedHTTPStatusCode":"400"
+}

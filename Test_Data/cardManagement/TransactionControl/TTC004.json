@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TTC004",
+"Test Case Description":"Validate the response after passing  the cardId that is in state of blocked temporarily",
+"RequestBody":{
+  "cardId": 2020062100852680266,
+  "transactionType": "1",
+  "status": "N",
+  "remarks": "Temporarily blocked card disabled the E-ComEnable"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

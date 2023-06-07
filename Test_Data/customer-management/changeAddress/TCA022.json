@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TCA022",
+"Test Case Description":"Validate the response after providing  invalid address2(max+1) 51 character in request body.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "FEKWTUFWE",
+    "address2": "QWERQWERQWERQWERQWERQWERQWERQWERQWERQWERQWERQWERQWER",
+    "country": "India",
+    "state": "ASD",
+    "city": "Delhi",
+    "postalCode": 8,
+    "phone": "123123",
+    "addressType":"P"
+  }
+},
+
+                      
+
+"ExpectedHTTPStatusCode":"400"
+
+}

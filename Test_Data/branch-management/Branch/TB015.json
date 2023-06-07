@@ -1,0 +1,29 @@
+{
+"TestCaseid":"TB015",
+"Test Case Description":"To validate the response for valid request body contains 'YN' into the value of 'accessAllBranch' node",
+"RequestBody":{
+  "branchName": "hardoi",
+  "issuerId": "Issuer1",
+  "address1": "myaddress1",
+  "address2": "myaddress2",
+  "state": "mystate",
+  "countryCode": "IN",
+  "city": "mycity",
+  "postalCode": "242316",
+  "contactPerson": "ayush",
+  "emailId": "branchemail@gmail.com",
+  "phoneNo": "213455",
+  "accessAllBranch": "YN"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGC010",
+"Test Case Description":"Validate the response after providing productId(26) in request body",
+"Test Case Description1":"Validate the productId of generated card",
+
+"RequestBody":{
+                     "productId": "13"
+              },
+"ExpectedResponseBody":{
+                         "responseCode": "000",
+                         "responseData": {
+                         "cardId": 2023031001174414467
+                                         },
+                         "errorDetail": null
+                       },
+"KeysForValidationInResponse":["responseCode","responseData","cardId","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200",
+"productId":"13"
+
+}

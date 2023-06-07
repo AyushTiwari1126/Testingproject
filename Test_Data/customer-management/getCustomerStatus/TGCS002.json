@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TGCS002",
+"Test Case Description":"validate the response with blank request body",
+
+"RequestBody":{
+                
+                
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Requested Data Not Available",
+                          "Customer does not exist"
+                                          ]
+                                        },
+                          "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

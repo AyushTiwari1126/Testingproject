@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TGCBI006",
+"Test Case Description":"Validate the response when we pass valid length (max -1=19)string in  request body",
+
+"RequestBody":{
+                "customerId": "AAAAAAAAAAAAAAAAAAA"
+              },
+"ExpectedResponseBody":{
+                         "errorDetail": {
+                         "errorMessage": [
+                         "Internal Server Error",
+                         "Exception occurred while getting the records from database"
+        ]
+                       },
+                     "responseCode": "101"
+                      },                                      
+"ExpectedResponseCode":"101",
+"ExpectedHTTPStatusCode":"500"
+}

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCBS019",
+"Test Case Description":"Validate the response after providing invalid request body(invalid alphabet string in  status node)",
+
+"RequestBody":{
+                "status": "XYZ"
+              },
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "Status Code is empty"
+        ]
+    },
+    "responseCode": "103"
+},
+                       
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

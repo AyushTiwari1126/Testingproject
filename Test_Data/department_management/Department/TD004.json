@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TD004",
+"Test Case Description":"To validate the response after providing the valid(unique) request data with status = D",
+"RequestBody":{
+  "departmentId": "System Generated DepartmentId",
+  "departmentDesc": "System Generated DepartmentDesc",
+  "status": "D"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully Processed"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","responseText","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

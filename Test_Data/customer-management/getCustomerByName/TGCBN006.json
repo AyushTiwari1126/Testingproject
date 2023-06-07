@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCBN006",
+"Test Case Description":"Validate the response when we pass integer string in customerName of request body.",
+
+"RequestBody":{
+          
+                 "customerName": "12345"
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "Requested Data Not Available",
+                           "Customer name did not exist"
+                                           ]
+                      },
+                      "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGCDI004",
+"Test Case Description":"To validate the response for kept the cardSchemeId as blank",
+"RequestBody":{
+  "cardSchemeId": ""
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "validation failed for card Scheme Id Validation"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

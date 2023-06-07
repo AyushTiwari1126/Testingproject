@@ -1,0 +1,32 @@
+{
+"TestCaseid":"TUCS015",
+"Test Case Description":"To validate the response for passing the cardSchemeId value as blank",
+"RequestBody":{
+  "cardSchemeId": "",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debit Card",
+    "cardScheme": "VI",
+    "bin": "400000",
+    "binLength": "6",
+    "settlementBin": "400000",
+    "cardNoLength": "16",
+    "lowRange": "0079",
+    "highRange": "0079",
+    "lowRangePosition": "7",
+    "cardNextValue": "001",
+    "checkDigitType": "MOD10"
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "No Details found for given Card Type"
+        ]
+    },
+    "responseCode": "110"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

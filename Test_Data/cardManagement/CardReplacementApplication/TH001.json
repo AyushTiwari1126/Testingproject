@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes ReqDatetime as blank)",
+"RequestBody":{
+  "cardId": 2019101100843057408,
+  "remark": "Card is closed",
+  "instantReplacement": "Y"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:50:28.511+00:00",
+    "status": 500,
+    "error": "Internal Server Error"
+},
+"ExpectedHTTPStatusCode":"500"
+}

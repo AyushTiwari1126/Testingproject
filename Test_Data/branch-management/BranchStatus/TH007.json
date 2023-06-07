@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TH007",
+"Test Case Description":"To validate the response after providing valid request body without any header",
+"RequestBody":{
+  "issuerBranchId": {
+    "issuerId": "Issuer1",
+    "branchId": "00"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:56:12.580+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/branch-managment/v1.0/branch-status"
+},
+"ExpectedHTTPStatusCode":"401"
+}

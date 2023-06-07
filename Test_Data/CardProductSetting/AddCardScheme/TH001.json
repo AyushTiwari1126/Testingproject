@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes ReqDatetime as blank)",
+"RequestBody":{
+  "cardSchemeDesc": "UnionPay",
+  "cardScheme": "VI",
+  "bin": "417500",
+  "binLength": "6",
+  "settlementBin": "400000",
+  "cardNoLength": "16",
+  "lowRange": "0500",
+  "highRange": "7500",
+  "lowRangePosition": "7",
+  "cardNextValue": "0510",
+  "checkDigitType": "MOD10"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:50:28.511+00:00",
+    "status": 500,
+    "error": "Internal Server Error"
+},
+"ExpectedHTTPStatusCode":"500"
+}

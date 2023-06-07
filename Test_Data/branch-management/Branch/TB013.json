@@ -1,0 +1,29 @@
+{
+"TestCaseid":"TB013",
+"Test Case Description":"Validate the response after pass any other character except 'Y' and 'N' into 'accessAllBranch' node",
+"RequestBody":{
+  "branchName": "hardoi",
+  "issuerId": "Issuer1",
+  "address1": "myaddress1",
+  "address2": "myaddress2",
+  "state": "mystate",
+  "countryCode": "IN",
+  "city": "mycity",
+  "postalCode": "242316",
+  "contactPerson": "ayush",
+  "emailId": "branchemail@gmail.com",
+  "phoneNo": "213455",
+  "accessAllBranch": "A"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

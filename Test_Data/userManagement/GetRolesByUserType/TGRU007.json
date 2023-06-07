@@ -1,0 +1,9 @@
+{
+"TestCaseid":"TGRU007",
+"Test Case Description":"Validate the response after providing blank  request body with Issuer1 Authorized Token",
+"RequestBody":{
+                  
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}

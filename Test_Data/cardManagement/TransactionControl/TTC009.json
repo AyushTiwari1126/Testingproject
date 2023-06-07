@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TTC009",
+"Test Case Description":"Validate the response after providing the cardId that is present in the state of Stolen Card-SC",
+"RequestBody":{
+  "cardId": 2022091300866361835,
+  "transactionType": "3",
+  "status": "N",
+  "remarks": "stolen card with disabled the international transactionType"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

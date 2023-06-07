@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCBN005",
+"Test Case Description":"Validate the response with spaces in customerName  of request body.",
+
+"RequestBody":{
+                   
+                   "customerName": "      "
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "Requested Data Not Available",
+                           "Customer name did not exist"
+                                           ]
+                      },
+                      "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

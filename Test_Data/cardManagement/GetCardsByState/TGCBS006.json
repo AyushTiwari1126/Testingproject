@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TGCBS006",
+"Test Case Description":"Validate the response after providing valid header with valid request body(status=CL)",
+
+"RequestBody":{
+                "status": "CL"
+              },
+"ExpectedResponseBody":{
+                         "responseCode": "000",
+                         "responseData": [
+                                    {
+                                     "cardId": 2020062200852880290
+                                    },
+                                    {
+                                     "cardId": 2019112200846668448
+                                    }      ],
+                                     "errorDetail": null
+                                    },
+                                    
+"KeysForValidationInResponse":["responseCode","responseData","cardId","errorDetail"],                                    
+                      
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+
+}

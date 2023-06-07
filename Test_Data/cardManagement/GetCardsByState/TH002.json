@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"Validate the response with Sign header value blank  ",
+
+"RequestBody":{
+                "status": "AC"
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}

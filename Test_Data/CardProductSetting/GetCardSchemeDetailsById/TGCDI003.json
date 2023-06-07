@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGCDI003",
+"Test Case Description":"To validate the response after pass spaces only into the CardSchemeId",
+"RequestBody":{
+  "cardSchemeId": "  "
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "Invalid card Scheme Id "
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

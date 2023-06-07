@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TH007",
+"Test Case Description":"Validate response after providing valid request body without any header value",
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:54:02.584+00:00",
+    "status": 401,
+    "error": "Unauthorized"
+},
+"ExpectedHTTPStatusCode":"401"
+}

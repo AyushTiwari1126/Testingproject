@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TD006",
+"Test Case Description":"Validate the response after providing request body (pass any character except 'A' & 'D')",
+"RequestBody":{
+  "departmentId": "System Generated DepartmentId",
+  "departmentDesc": "System Generated DepartmentDesc",
+  "status": "B"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Status code is invalid: B"
+        ]
+    },
+    "responseCode": "236"
+},
+"ExpectedHTTPStatusCode":"400"
+}

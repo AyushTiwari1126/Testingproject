@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"To validate the response for valid request body with headers (takes ReqDatetime as blank)",
+"RequestBody":{
+  "branchId": "00"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-30T08:01:22.348+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/branch-info/v1.0/getBranchStatus"
+},
+"ExpectedHTTPStatusCode":"500"
+}

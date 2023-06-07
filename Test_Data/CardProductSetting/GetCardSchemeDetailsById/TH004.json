@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TH004",
+"Test Case Description":"Validate response after providing valid request body with valid header (without reqDatetime header)",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:54:02.584+00:00",
+    "status": 500,
+    "error": "Unauthorized"
+},
+"ExpectedHTTPStatusCode":"500"
+}

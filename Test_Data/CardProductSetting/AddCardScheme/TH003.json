@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TH003",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes authorization as blank)",
+"RequestBody":{
+  "cardSchemeDesc": "UnionPay",
+  "cardScheme": "VI",
+  "bin": "417500",
+  "binLength": "6",
+  "settlementBin": "400000",
+  "cardNoLength": "16",
+  "lowRange": "0500",
+  "highRange": "7500",
+  "lowRangePosition": "7",
+  "cardNextValue": "0510",
+  "checkDigitType": "MOD10"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:54:02.584+00:00",
+    "status": 401,
+    "error": "Unauthorized"
+},
+"ExpectedHTTPStatusCode":"401"
+}

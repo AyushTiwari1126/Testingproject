@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TBS002",
+"Test Case Description":"Validate the response after providing valid headers with valid request body (contains invalid branchId)",
+"RequestBody":{
+  "issuerBranchId": {
+    "branchId": "123456"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "ErrorOut while updating status in branch",
+            "Getting error while updating branch details"
+        ]
+    },
+    "responseCode": "603"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],                       
+"ExpectedResponseCode":"603",
+"ExpectedHTTPStatusCode":"404"
+}

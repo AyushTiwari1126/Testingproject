@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCCS009",
+"Test Case Description":"To validate the response for contains spaces only into remarks and card status",
+"RequestBody":{
+  "cardId": 2022040700859700952,
+  "remarks": "  ",
+  "status": "  "
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "Exception occurred as Status code is empty"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

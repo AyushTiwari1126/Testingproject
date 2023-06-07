@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCA003",
+"Test Case Description":"Validate the response after providing all field <br> in newAddress node blank.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "",
+    "address2": "",
+    "country": "",
+    "state": "",
+    "city": "",
+    "postalCode": "",
+    "phone": "",
+    "addressType": ""
+  }
+},
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Transaction is NOT permitted to Card product",
+                          "Exception occurred while validating the address1406 NOT_ACCEPTABLE \"Field not Found\""
+        ]
+                                         },
+                          "responseCode": "236"
+                       },
+                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

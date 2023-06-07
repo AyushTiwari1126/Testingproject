@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCCS001",
+"Test Case Description":"To validate the response after passing the cardId change from active state to inactive state",
+"RequestBody":{
+  "cardId": 2022092300867562122,
+  "remarks": "Card state change from active state to inactive card state",
+  "status": "IC"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardId": 2022092300867562122,
+        "customerId": "C0923591090106757",
+        "issuerId": null,
+        "status": "NUMBER_11",
+        "accountId": "AC0923591370106758",
+        "cardProductId": "000",
+        "expDate": null,
+        "billingDate": "null",
+        "creditLimitPercent": 100,
+        "cashLimitPercent": 90,
+        "cardholderType": 1,
+        "maskedCardNo": "100971XXXX002122"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardId","customerId","issuerId","status","accountId","cardProductId","billingDate","creditLimitPercent","cardholderType","maskedCardNo","errorDetail"],
+"ExpectedCardId":2022092300867562122,
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

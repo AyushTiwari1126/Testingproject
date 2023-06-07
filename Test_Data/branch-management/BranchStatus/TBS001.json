@@ -1,0 +1,26 @@
+{
+"TestCaseid":"TBS001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"RequestBody":{
+  "issuerBranchId": {
+    "branchId": "5001"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 5001",
+        "departmentId": null,
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","responseText","status","departmentId","errorDetail"],
+"Expectedstatus":"A",
+"ExpectedbranchId":"5001",                
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

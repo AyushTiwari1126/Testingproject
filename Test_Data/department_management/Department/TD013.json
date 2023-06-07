@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TD013",
+"Test Case Description":"Validate the response after passing nothing into the request body",
+"RequestBody":{},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Exception occurred while validating the Department Id 406 NOT_ACCEPTABLE \"Field not Found \""
+        ]
+    },
+    "responseCode": "236"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedHTTPStatusCode":"400"
+}

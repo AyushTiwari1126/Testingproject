@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TACS003",
+"Test Case Description":"Validate the response for providing all the data with already existing cardSchemeDesc",
+"RequestBody":{
+  "cardSchemeDesc": "UnionPay",
+  "cardScheme": "RP",
+  "bin": "876121",
+  "binLength": "6",
+  "settlementBin": "876121",
+  "cardNoLength": "16",
+  "lowRange": "0000",
+  "highRange": "1999",
+  "lowRangePosition": "7",
+  "cardNextValue": "0876",
+  "checkDigitType": "MOD10"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

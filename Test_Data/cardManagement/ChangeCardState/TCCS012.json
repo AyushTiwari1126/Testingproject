@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TCCS012",
+"Test Case Description":"Validation for the response by removing the node(cardId) from request body",
+"RequestBody":{
+  "remarks": "Card state change from active state to block by fraudrule state",
+  "status": "BF"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "card id validation error"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCCS006",
+"Test Case Description":"To validate the response after passing the invalid cardId and change into active state",
+"RequestBody":{
+  "cardId": 1234567890123456789,
+  "remarks": "Pass invalid cardId and change to active state",
+  "status": "AC"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "card id validation error"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

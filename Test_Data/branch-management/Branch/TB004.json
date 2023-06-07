@@ -1,0 +1,28 @@
+{
+"TestCaseid":"TB004",
+"Test Case Description":"To validate the response when passing min-1 (4-characters) into branchName",
+"RequestBody":{
+  "branchName": "DEL",
+  "issuerId": "Issuer1",
+  "address1": "C-406, ithum tower",
+  "address2": "sector-62",
+  "state": "mystate",
+  "countryCode": "IN",
+  "city": "mycity",
+  "postalCode": "242316",
+  "contactPerson": "ayushtiwari",
+  "emailId": "branchemail@gmail.com",
+  "phoneNo": "213455",
+  "accessAllBranch": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 07744",
+        "branchId": "07744"
+    },
+    "errorDetail": null
+},
+
+"ExpectedHTTPStatusCode":"400"
+}

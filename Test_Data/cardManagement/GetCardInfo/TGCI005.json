@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCI005",
+"Test Case Description":"Validate the response after  providing invalid cardId (which not present in database)",
+
+"RequestBody":{
+                 "cardId":2019110400844837712
+              },
+"ExpectedResponseBody":{
+                         "errorDetail": {
+                        "errorMessage": [
+                       "Requested Data Not Available",
+                       "Card Details did not exist"
+                                         ]
+                                       },
+                       "responseCode": "110"
+                      },
+                   
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

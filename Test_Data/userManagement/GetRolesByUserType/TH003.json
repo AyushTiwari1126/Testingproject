@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH003",
+"Test Case Description":"Validate the response with Authorization header value blank. ",
+"RequestBody":{
+                  "userType":"ASPADMIN"
+              },
+"ExpectedResponseBody":{
+    "timestamp": "2023-02-13T09:08:27.576+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/user-role/v1.0/getRolesByUserType"
+},
+
+"ExpectedHTTPStatusCode":"401"
+}

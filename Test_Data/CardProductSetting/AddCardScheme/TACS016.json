@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TACS016",
+"Test Case Description":"Validate the response after providing the cardNoLength smaller than the sum of Bin and digits of lowRange & highRange",
+"RequestBody":{
+  "tlementBin": "string",
+  "cardSchemeDesc": "my Card",
+  "cardScheme": "DC",
+  "bin": "309567",
+  "binLength": "6",
+  "settlementBin": "309567",
+  "cardNoLength": "14",
+  "lowRange": "135204",
+  "highRange": "634553",
+  "lowRangePosition": "7",
+  "cardNextValue": "135225",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

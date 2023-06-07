@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TBS010",
+"Test Case Description":"Validate response after providing valid headers with request body (takes all nodes as blank)",
+"RequestBody":{
+  "issuerBranchId": {
+    "branchId": ""
+  },
+  "Status": {
+    "statusCode": ""
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

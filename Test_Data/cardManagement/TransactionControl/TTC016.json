@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TTC016",
+"Test Case Description":"Validate the response after providing the transactionType except '1','2' & '3'",
+"RequestBody":{
+  "cardId": 2019110800845978323,
+  "transactionType": "4",
+  "status": "Y",
+  "remarks": "Active card with enabled the invalid transactionType : 4"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "validation failed for transactionTypeEnum request reason validation"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

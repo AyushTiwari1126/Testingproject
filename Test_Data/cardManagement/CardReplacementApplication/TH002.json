@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes Sign header as blank)",
+"RequestBody":{
+  "cardId": 2019101100843057408,
+  "remark": "Card is closed",
+  "instantReplacement": "Y"
+},
+"ExpectedHTTPStatusCode":"400"
+}

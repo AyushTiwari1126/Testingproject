@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGCA007",
+"Test Case Description":"Validate the response when we pass valid customer string length(max-1=19) in customerId node. ",
+
+"RequestBody":{
+                "customerId": "aaaaaaaaaaaaaaaaaaa"
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "DataBase error occurred while inserting the records into DB",
+                           "DB error while fetching the Customer Address."
+                                           ]
+                                          },
+                           "responseCode": "701"
+                       },                      
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

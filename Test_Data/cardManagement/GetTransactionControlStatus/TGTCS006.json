@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TGTCS006",
+"Test Case Description":"Validate the response after passing value into the transactionType except '1', '2' and '3'",
+"RequestBody":{
+  "cardId": 2019110400844837739,
+  "transactionType": "4"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

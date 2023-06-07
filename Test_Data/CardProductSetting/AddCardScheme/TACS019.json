@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TACS019",
+"Test Case Description":"Validate the response for after passing the empty request body without any node",
+"RequestBody":{},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TH005",
+"Test Case Description":"Validate response after providing valid request body with valid header (without Sign header)",
+"RequestBody":{
+  "cardSchemeDesc": "UnionPay",
+  "cardScheme": "VI",
+  "bin": "417500",
+  "binLength": "6",
+  "settlementBin": "400000",
+  "cardNoLength": "16",
+  "lowRange": "0500",
+  "highRange": "7500",
+  "lowRangePosition": "7",
+  "cardNextValue": "0510",
+  "checkDigitType": "MOD10"
+},
+"ExpectedHTTPStatusCode":"400"
+}

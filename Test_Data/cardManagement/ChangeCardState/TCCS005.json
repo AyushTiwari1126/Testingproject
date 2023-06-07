@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCCS005",
+"Test Case Description":"To validate the response after passing the cardId change from stolen state to blockByManagement state",
+"RequestBody":{
+  "cardId": 2022091300866421892,
+  "remarks": "Card state change from stolen state to block by management state",
+  "status": "BM"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardId": 2022091300866421892,
+        "customerId": "C0913097150106547",
+        "issuerId": null,
+        "status": "NUMBER_12",
+        "accountId": "AC0913095120106548",
+        "cardProductId": "000",
+        "expDate": null,
+        "billingDate": "null",
+        "creditLimitPercent": 100,
+        "cashLimitPercent": 90,
+        "cardholderType": 1,
+        "maskedCardNo": "100971XXXX001892"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardId","customerId","issuerId","status","accountId","cardProductId","billingDate","creditLimitPercent","cardholderType","maskedCardNo","errorDetail"],
+"ExpectedCardId":2022091300866421892,
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

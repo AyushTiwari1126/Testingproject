@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TACS009",
+"Test Case Description":"To validate the checkDigitType value other than 'MOD10' in request body",
+"RequestBody":{
+  "tlementBin": "string",
+  "cardSchemeDesc": "TACT009 testcase",
+  "cardScheme": "DC",
+  "bin": "414237",
+  "binLength": "6",
+  "settlementBin": "414237",
+  "cardNoLength": "16",
+  "lowRange": "13520",
+  "highRange": "63455",
+  "lowRangePosition": "7",
+  "cardNextValue": "13522",
+  "checkDigitType": "TACT009 Test"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TCA026",
+"Test Case Description":"Validate the response after providing  invalid <br>postalCode (max+1) 9 integer in request body.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "FEKWTUFWE",
+    "address2": "QWERQWERQW",
+    "country": "ASZXA",
+    "state": "ASZX",
+    "city": "ASZXA",
+    "postalCode": 121212121,
+    "phone": "12121212",
+    "addressType":"P"
+  }
+},
+
+                      
+"ExpectedHTTPStatusCode":"400"
+
+}

@@ -1,0 +1,23 @@
+{
+"TestCaseid":"TACS011",
+"Test Case Description":"Validate the response after providing the max+1(20) in cardNoLength value",
+"RequestBody":{
+  "cardSchemeDesc": "Rupay",
+  "cardScheme": "RP",
+  "bin": "140642",
+  "binLength": "6",
+  "settlementBin": "140642",
+  "cardNoLength": "20",
+  "lowRange": "05000",
+  "highRange": "07500",
+  "lowRangePosition": "7",
+  "cardNextValue": "05100",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+
+"ExpectedHTTPStatusCode":"400"
+}

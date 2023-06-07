@@ -1,0 +1,30 @@
+{
+"TestCaseid":"TB018",
+"Test Case Description":"To validate the response for after passing nothing into the values.",
+"RequestBody":{
+  "branchName": "",
+  "issuerId": "",
+  "address1": "",
+  "address2": "",
+  "state": "",
+  "countryCode": "",
+  "city": "",
+  "postalCode": "",
+  "contactPerson": "",
+  "emailId": "",
+  "phoneNo": "",
+  "accessAllBranch": ""
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

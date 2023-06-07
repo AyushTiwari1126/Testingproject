@@ -1,0 +1,9 @@
+{
+"TestCaseid":"TCBA008",
+"Test Case Description":"Validate the response after providing invalid billingAddressType (K) in request body",
+"RequestBody":{
+                "customerId": "C1202086160082987",
+                "billingAddressType": "K"
+               },
+"ExpectedHTTPStatusCode":"400"
+}

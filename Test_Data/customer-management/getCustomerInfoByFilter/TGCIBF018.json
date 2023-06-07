@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TGCCBF018",
+"Test Case Description":"Validate the response after providing spaces in email node value in request body ",
+
+"RequestBody":{
+
+  "name": "HafizL",
+  "mobileNo": "60112233497",
+  "email": "          "
+},
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Internal Server Error",
+                          "Exception occurred while getting CustomerInfoByFilter from database"
+                                          ]
+                                         },
+                          "responseCode": "101"
+                       },
+                       
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

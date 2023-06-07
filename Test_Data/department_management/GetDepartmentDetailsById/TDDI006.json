@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TDDI006",
+"Test Case Description":"To validate the response for passing more than max(2-digits) in departmentId",
+"RequestBody":{
+  "departmentId": "150"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGCBN004",
+"Test Case Description":"Validate the response with blank value in customerName node in request body.",
+
+"RequestBody":{
+                "customerName": ""
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "Requested Data Not Available",
+                           "Customer name did not exist"
+                                           ]
+                      },
+                      "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

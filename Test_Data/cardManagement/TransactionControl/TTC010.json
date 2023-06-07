@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TTC010",
+"Test Case Description":"To validate the response for passing the cardId that is present in  Deceased State - CD",
+"RequestBody":{
+  "cardId": 2022122100882576768,
+  "transactionType": "1",
+  "status": "N",
+  "remarks": "Deceased card with disabled the ecom transactionType"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"\"Not-Defined\"",
+"ExpectedHTTPStatusCode":"200"
+}

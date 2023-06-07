@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TGCRA002",
+"Test Case Description":"Validate the response after providing A (Accepted) application status in request body.",
+
+"RequestBody":{
+                "applicationStatus": "A"
+              },
+"ExpectedResponseBody":{
+                           "responseCode": "000",
+                           "responseData": [
+                                             {
+                                                "cardId": 2022100700870362403,
+                                                "applicationId": "A021609750116306",
+                                                "reason": "new Card",
+                                                "appliedDate": "2023-02-16 00:09:46.0",
+                                                "instantReplacement": "Y"}
+                                           ],
+                           "errorDetail": null
+                      },
+"KeysForValidationInResponse":["responseCode","responseData","cardId","applicationId","reason","appliedDate","instantReplacement","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+
+}

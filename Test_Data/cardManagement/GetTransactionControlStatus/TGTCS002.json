@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGTCS002",
+"Test Case Description":"Validation for CardId with no status set for transactionType",
+"RequestBody":{
+  "cardId": 2019110400844837739,
+  "transactionType": "2"
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "DataBase error occurred while inserting the records into DB",
+            "Card data couldn't be fetched from table CARDS for card id: 2019110400844837739"
+        ]
+    },
+    "responseCode": "701"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedCardId":"2019110400844837739",
+"ExpectedResponseCode":"701",
+"ExpectedHTTPStatusCode":"404"
+}

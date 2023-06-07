@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH006",
+"Test Case Description":"Validate the response without Authorization header",
+"RequestBody":{
+                  "customerId": "C1202086160082987",
+                  "billingAddressType": "H"
+              },
+"ExpectedResponseBody":{
+    "timestamp": "2023-02-13T09:09:03.175+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/address-managment/v1.0/changeBillingAddress"
+},
+"ExpectedHTTPStatusCode":"401"
+}

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TCRA007",
+"Test Case Description":"To validate the response after passing the improper or invalid cardId that is not present in any card state.",
+"RequestBody":{
+  "cardId": 1234567890123456789,
+  "remark": "Wrong CardId",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "create card replacement application Failed "
+        ]
+    },
+    "responseCode": "101"
+},
+
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

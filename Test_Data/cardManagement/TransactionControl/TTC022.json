@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TTC022",
+"Test Case Description":"To validate the response after providing the (max-1) digits into the cardId (length validation)",
+"RequestBody":{
+  "cardId": 201911080084597832,
+  "transactionType": "1",
+  "status": "Y",
+  "remarks": "Card is closed"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "card id validation error"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

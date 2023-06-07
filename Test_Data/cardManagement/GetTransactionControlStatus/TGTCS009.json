@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TGTCS009",
+"Test Case Description":"Validation for the request body without any nodes into it",
+"RequestBody":{},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGCA005",
+"Test Case Description":"Validate the response after providing spaces in customerId of request body ",
+
+"RequestBody":{
+                 "customerId": "    "
+              },
+"ExpectedResponseBody":{
+                           "errorDetail": {
+                           "errorMessage": [
+                           "DataBase error occurred while inserting the records into DB",
+                           "DB error while fetching the Customer Address."
+                                           ]
+                                          },
+                           "responseCode": "701"
+                       },                      
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

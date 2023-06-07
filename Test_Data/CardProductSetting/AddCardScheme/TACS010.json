@@ -1,0 +1,26 @@
+{
+"TestCaseid":"TACS010",
+"Test Case Description":"Validation for the response when passing the Bin length (greater than value 6)",
+"RequestBody":{
+  "tlementBin": "string",
+  "cardTypeDesc": "TACT010 testcase",
+  "cardScheme": "DC",
+  "bin": "3095",
+  "binLength": "10",
+  "settlementBin": "3095",
+  "cardNoLength": "16",
+  "lowRange": "135204",
+  "highRange": "634553",
+  "lowRangePosition": "5",
+  "cardNextValue": "135225",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardSchemeId": "88"
+    },
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

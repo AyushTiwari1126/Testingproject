@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH003",
+"Test Case Description":"Validate the response with Authorization header value blank. ",
+"RequestBody":{
+                "applicationStatus": "AU"
+              },
+"ExpectedResponseBody":{
+                         "timestamp": "2023-03-24T04:36:25.755+00:00",
+                         "status": 401,
+                         "error": "Unauthorized",
+                         "path": "/replacement/v1.0/getCardReplacementApplication"
+                       },
+
+"ExpectedHTTPStatusCode":"401"
+}

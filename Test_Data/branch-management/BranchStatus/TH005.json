@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TH005",
+"Test Case Description":"Validate the response after providing valid request body with headers (without Sign)",
+"RequestBody":{
+  "issuerBranchId": {
+    "issuerId": "Issuer1",
+    "branchId": "00"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedHTTPStatusCode":"400"
+}

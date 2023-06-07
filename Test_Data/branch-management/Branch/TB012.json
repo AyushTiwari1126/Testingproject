@@ -1,0 +1,30 @@
+{
+"TestCaseid":"TB012",
+"Test Case Description":"Validate the response for passing only spaces into the values of all nodes",
+"RequestBody":{
+  "branchName": "  ",
+  "issuerId": "  ",
+  "address1": "  ",
+  "address2": "  ",
+  "state": "  ",
+  "countryCode": "  ",
+  "city": "  ",
+  "postalCode": "  ",
+  "contactPerson": "  ",
+  "emailId": "  ",
+  "phoneNo": "  ",
+  "accessAllBranch": "  "
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA022",
+"Test Case Description":"To validate the response after providing the cardId which is present in Manual Suspension state",
+"RequestBody":{
+  "cardId": 2022121300879575489,
+  "remark": "Manual suspension CardId",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"305",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TB003",
+"Test Case Description":"To validate for all the nodes in requestBody are mandatory or not by passing nothing into request body except 'accessAllBranch'",
+"RequestBody":{
+  "accessAllBranch": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully updated the status code for branchId: 73227",
+        "branchId": "73227"
+    },
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

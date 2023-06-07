@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TTC019",
+"Test Case Description":"Validate the response after providing the blank values into the request body",
+"RequestBody":{
+  "cardId": 2019110800845978323,
+  "transactionType": "",
+  "status": "",
+  "remarks": ""
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "validation failed for transactionTypeEnum request reason validation"
+        ]
+    },
+    "responseCode": "103"
+},
+"KeysForValidationInResponse":["errorDetail","errorMessage","responseCode"],
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

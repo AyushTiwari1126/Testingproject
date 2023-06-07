@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TACS002",
+"Test Case Description":"To validate that the generated cardSchemeId is unique or not same as any of the existing cardSchemeId",
+"RequestBody":{
+  "cardSchemeDesc": "TACS002",
+  "cardScheme": "VI",
+  "bin": "412345",
+  "binLength": "6",
+  "settlementBin": "412345",
+  "cardNoLength": "16",
+  "lowRange": "1352",
+  "highRange": "6345",
+  "lowRangePosition": "7",
+  "cardNextValue": "2362",
+  "checkDigitType": "MOD10"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TUCS002",
+"Test Case Description":"Validation for passing invalid cardSchemeId that is not present into the database",
+"RequestBody":{
+  "cardSchemeId": "20",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debt",
+    "cardScheme": "RP",
+    "bin": "437217",
+    "binLength": "6",
+    "settlementBin": "437217",
+    "cardNoLength": "16",
+    "lowRange": "0030",
+    "highRange": "0276",
+    "lowRangePosition": "7",
+    "cardNextValue": "0212",
+    "checkDigitType": "MOD10"
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "No Details found for given Card Scheme"
+        ]
+    },
+    "responseCode": "110"
+},
+"ExpectedHTTPStatusCode":"400"
+}

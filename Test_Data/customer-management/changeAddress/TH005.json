@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TH005",
+"Test Case Description":"Validate the response without Sign Header.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "Z, Ithum",
+    "address2": "bbb, Ithum",
+    "country": "India",
+    "state": "Delhi",
+    "city": "Delhi",
+    "postalCode": 8,
+    "phone": "0120 3203939",
+    "addressType": "P"
+  }
+},
+
+"ExpectedHTTPStatusCode":"400"
+}

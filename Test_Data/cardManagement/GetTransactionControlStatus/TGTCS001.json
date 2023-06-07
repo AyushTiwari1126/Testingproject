@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGTCS001",
+"Test Case Description":"To validate the status for the cardId from Active card state with Ecom transaction type",
+"RequestBody":{
+  "cardId": 2019110400844837739,
+  "transactionType": "1"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null,
+    "cardId": 2019110400844837739,
+    "transactionType": "1",
+    "status": "Y"
+},
+"KeysForValidationInResponse":["responseCode","cardId","transactionType","status","errorDetail"],
+"ExpectedCardID":2019110400844837739,
+"ExpectedtransactionType":"1",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

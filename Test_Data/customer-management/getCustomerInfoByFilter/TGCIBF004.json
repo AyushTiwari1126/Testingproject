@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TGCIBF004",
+"Test Case Description":"Validate the response without providing  mobileNo node in request body ",
+
+"RequestBody":{ 
+                  "name": "HafizL",
+                  "email": "winzawoo1978@wirecard.com"
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Internal Server Error",
+                          "Exception occurred while getting CustomerInfoByFilter from database"
+                                          ]
+                                         },
+                          "responseCode": "101"
+                       },
+"KeysForValidationInResponse":["responseCode","responseData","customerId","customerName","surnameName","dob","nationality","gender","email","mobileNo","status","lastUpdatedDate","errorDetail"],                       
+"ExpectedResponseCode":"101",
+"ExpectedHTTPStatusCode":"500"
+
+}

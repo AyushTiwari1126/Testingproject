@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TH007",
+"Test Case Description":"Validate the response after providing  all header  without value.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "Z, Ithum",
+    "address2": "bbb, Ithum",
+    "country": "India",
+    "state": "Delhi",
+    "city": "Delhi",
+    "postalCode": 8,
+    "phone": "0120 3203939",
+    "addressType": "P"
+  }
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-02-13T09:09:15.863+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/address-managment/v1.0/changeAddress"
+},
+"ExpectedHTTPStatusCode":"401"
+}

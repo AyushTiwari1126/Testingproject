@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TGDS001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"RequestBody":{
+  "departmentId": "1"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "1",
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","status","errorDetail"],
+"ExpectedDeptstatus":"A",
+"ExpectedDeptId":"1",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

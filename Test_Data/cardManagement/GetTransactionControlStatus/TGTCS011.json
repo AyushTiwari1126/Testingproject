@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGTCS011",
+"Test Case Description":"Validate the response after pass only transaction type into request body",
+"RequestBody":{
+  "transactionType": "1"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

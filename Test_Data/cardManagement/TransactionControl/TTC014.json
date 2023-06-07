@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TTC014",
+"Test Case Description":"To validate the response for providing the cardId that is present in state of Suspect Fraud - SF",
+"RequestBody":{
+  "cardId": 2022122000882196487,
+  "transactionType": "1",
+  "status": "Y",
+  "remarks": "Suspect fraud with enabled the ecom transactionType"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"311",
+"ExpectedHTTPStatusCode":"200"
+}

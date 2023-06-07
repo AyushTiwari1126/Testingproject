@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TGCDI006",
+"Test Case Description":"Validate the response after pass nothing into the request body",
+"RequestBody":{},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "validation failed for card Scheme Id Validation"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

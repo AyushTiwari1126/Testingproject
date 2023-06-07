@@ -1,0 +1,11 @@
+{
+"TestCaseid":"TH005",
+"Test Case Description":"Validate the response without Sign Header. ",
+
+"RequestBody":{
+                   
+                     "customerId": "C1202086160082987"
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}

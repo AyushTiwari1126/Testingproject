@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TDS005",
+"Test Case Description":"Validate the response after providing any other character except 'A', 'D' & 'I' in StatusCode with valid headers ",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "1"
+  },
+  "Status": {
+    "statusCode": "B"
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Exception occurred while validating the status code406 NOT_ACCEPTABLE \"Exception occurred as Status code is empty\""
+        ]
+    },
+    "responseCode": "236"
+},
+"ExpectedHTTPStatusCode":"400"
+}

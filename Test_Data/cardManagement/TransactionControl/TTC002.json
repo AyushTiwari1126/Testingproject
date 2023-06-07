@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TTC002",
+"Test Case Description":"To validate the response for passing the cardId that is present in Closed State-CC",
+"RequestBody":{
+  "cardId": 2020050400850899360,
+  "transactionType": "2",
+  "status": "N",
+  "remarks": "This remark is for closed card with disabled the domestic transactionType"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"304",
+"ExpectedHTTPStatusCode":"200"
+}

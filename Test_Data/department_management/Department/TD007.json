@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TD007",
+"Test Case Description":"To validate the response for the request body (pass integer type value in departmentId)",
+"RequestBody":{
+  "departmentId":46,
+  "departmentDesc": "Cardiology Department",
+  "status": "A"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully Processed"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"113",
+"ExpectedHTTPStatusCode":"422"
+}

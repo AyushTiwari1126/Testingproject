@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TB011",
+"Test Case Description":"Validate the response by passing the integer type values in all nodes except in 'accessAllBranch'",
+"RequestBody":{
+  "branchName": 945,
+  "issuerId": 170,
+  "address1": 35120,
+  "address2": 352,
+  "state": 315,
+  "countryCode": 19,
+  "city": 87,
+  "postalCode": 1103053,
+  "contactPerson": 3619,
+  "emailId": 9218017,
+  "phoneNo": 12749,
+  "accessAllBranch": "Y"
+},
+"ExpectedHTTPStatusCode":"400"
+}

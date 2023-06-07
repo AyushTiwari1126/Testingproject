@@ -1,0 +1,12 @@
+{
+"TestCaseid":"TGCRA009",
+"Test Case Description":"Validate the response after providing spaces in applicationStatus node of request body",
+
+"RequestBody":{
+                "applicationStatus": "  "
+              },
+
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

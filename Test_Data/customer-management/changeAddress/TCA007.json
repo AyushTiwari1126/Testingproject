@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TCA007",
+"Test Case Description":"Validate the response after providing invalid <br>addressType(exclude H,C,P,S)in request body.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "Z, Ithum",
+    "address2": "bbb, Ithum",
+    "country": "India",
+    "state": "Delhi",
+    "city": "Delhi",
+    "postalCode": 8,
+    "phone": "0120 3203939",
+    "addressType": "K"
+  }
+},
+
+"ExpectedHTTPStatusCode":"400"
+
+}

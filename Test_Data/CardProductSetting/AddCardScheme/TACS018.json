@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TACS018",
+"Test Case Description":"To validate response when passing all blank values into the request body",
+"RequestBody":{
+  "tlementBin": "",
+  "cardSchemeDesc": "",
+  "cardScheme": "",
+  "bin": "",
+  "binLength": "",
+  "settlementBin": "",
+  "cardNoLength": "",
+  "lowRange": "",
+  "highRange": "",
+  "lowRangePosition": "",
+  "cardNextValue": "",
+  "checkDigitType": ""
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"GetAllDepartment",
+"Test Case Description":"Validate the response after providing valid header with valid request body in GetAllDepartment",
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "departmentId": "18",
+            "departmentDesc": "Admin Department",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Wed Aug 24 09:02:11 UTC 2022"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","departmentDesc","issuerId","status","lastUpdatedBy","lastUpdatedDate","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

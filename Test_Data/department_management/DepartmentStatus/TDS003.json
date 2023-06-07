@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TDS003",
+"Test Case Description":"Validate the response after updating the same status again that is already updated",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "1"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "1",
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","status","errorDetail"],
+"ExpectedDeptstatus":"A",
+"ExpectedDeptId":"1",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

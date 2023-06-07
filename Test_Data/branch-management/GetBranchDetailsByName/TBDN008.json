@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TBDN007",
+"Test Case Description":"Validate response after providing valid header with valid request body (contains max+1(21-characters) in branchName)",
+"RequestBody":{
+  "branchName": "MumbaiMumbaiMumbaiass"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

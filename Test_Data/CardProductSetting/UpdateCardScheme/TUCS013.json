@@ -1,0 +1,22 @@
+{
+"TestCaseid":"TUCS013",
+"Test Case Description":"Validation for the cardType data nodes are mandatory or not into the request body",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Debit Card",
+    "settlementBin": "400000",
+    "cardNoLength": "16",
+    "lowRange": "0030",
+    "highRange": "0079",
+    "lowRangePosition": "7",
+    "checkDigitType": "MOD10"
+  }
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCCS002",
+"Test Case Description":"To validate the response after passing the cardId change from Closed state to Deceased state",
+"RequestBody":{
+  "cardId": 301020190844230000,
+  "remarks": "Card state change from closed state to Deceased state",
+  "status": "CD"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardId": 301020190844230000,
+        "customerId": "C1030007090082115",
+        "issuerId": null,
+        "status": "NUMBER_9",
+        "accountId": null,
+        "cardProductId": "000",
+        "expDate": "1023",
+        "billingDate": "null",
+        "creditLimitPercent": 0,
+        "cashLimitPercent": 0,
+        "cardholderType": 1,
+        "maskedCardNo": "XXXXXXXXXXXXXXXX"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardId","customerId","issuerId","status","accountId","cardProductId","billingDate","creditLimitPercent","cardholderType","maskedCardNo","errorDetail"],
+"ExpectedCardId":301020190844230000,
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

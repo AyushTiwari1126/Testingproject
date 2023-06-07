@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGTCS010",
+"Test Case Description":"To validate the response after passing only cardId into the request body",
+"RequestBody":{
+  "cardId": 2019110400844837739
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

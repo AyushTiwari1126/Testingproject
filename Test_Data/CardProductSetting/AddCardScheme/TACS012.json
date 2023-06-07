@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TACS012",
+"Test Case Description":"To validate the response after passing The lowRangePostion value smaller than the Bin length",
+"RequestBody":{
+  "tlementBin": "string",
+  "cardSchemeDesc": "my Card",
+  "cardScheme": "DC",
+  "bin": "435678",
+  "binLength": "6",
+  "settlementBin": "435678",
+  "cardNoLength": "16",
+  "lowRange": "13520",
+  "highRange": "63458",
+  "lowRangePosition": "5",
+  "cardNextValue": "15225",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

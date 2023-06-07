@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TGDS005",
+"Test Case Description":"To validate the response after passing the integer typed value into departmentId",
+"RequestBody":{
+  "departmentId": 2
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "2",
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

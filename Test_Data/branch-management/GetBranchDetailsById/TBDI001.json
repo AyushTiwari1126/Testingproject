@@ -1,0 +1,33 @@
+{
+"TestCaseid":"TBDI001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"RequestBody":{
+  "branchId": "5001"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "branchId": "5001",
+            "branchName": "Dhanbad",
+            "address1": "b640 Harkesh",
+            "address2": "harkesh Nagar okhla 22983",
+            "city": "KL",
+            "state": "uttar pradesh",
+            "country": "MY",
+            "postalCode": 87263,
+            "contactPerson": "Sonu Nigam",
+            "phoneNo": "8743659873",
+            "accessAllBranch": "N",
+            "userType": null,
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Thu Jul 28 04:43:05 UTC 2022"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","branchId","branchName","address1","address2","city","state","country","postalCode","contactPerson","phoneNo","accessAllBranch","userType","lastUpdatedBy","lastUpdatedDate","errorDetail"],                     
+"ExpectedBranchId":"5001",
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

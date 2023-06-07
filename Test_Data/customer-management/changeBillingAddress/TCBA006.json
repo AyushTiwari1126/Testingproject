@@ -1,0 +1,6 @@
+{
+"TestCaseid":"TCBA006",
+"Test Case Description":"Validate the response after providing bank request body",
+"RequestBody":{},
+"ExpectedHTTPStatusCode":"400"
+}

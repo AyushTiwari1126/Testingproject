@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TGDS004",
+"Test Case Description":"Validate the response for checking the status of departmentId having special characters",
+"RequestBody":{
+  "departmentId": "#@"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "departmentId": "#@",
+        "status": "A"
+    },
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

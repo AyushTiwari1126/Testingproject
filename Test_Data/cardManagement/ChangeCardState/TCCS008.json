@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TCCS008",
+"Test Case Description":"Validate the response after passing the invalid cardId status",
+"RequestBody":{
+  "cardId": 2022121900881535927,
+  "remarks": "Pass invalid card status with valid cardId",
+  "status": "AB"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "Exception occurred as Status code is empty"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TBDI008",
+"Test Case Description":"Validate the response after providing valid headers with request body (pass max+1 (7-digits) in branchId)",
+"RequestBody":{
+  "branchId": "2581767"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

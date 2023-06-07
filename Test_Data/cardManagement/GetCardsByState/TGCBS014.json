@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TGCBS014",
+"Test Case Description":"Validate the response after providing valid header with valid request body(status=LC41)",
+
+"RequestBody":{
+                "status": "LC41"
+              },
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "cardId": 2022040700859650903
+        },
+        {
+            "cardId": 201910310844590091
+        }
+    ],
+    "errorDetail": null
+                        },
+"KeysForValidationInResponse":["responseCode","responseData","cardId","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+
+}

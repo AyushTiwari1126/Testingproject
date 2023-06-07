@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TGSL002",
+"Test Case Description":"Validate the responseData for ASP with valid headers",
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "BI",
+            "lastUpdatedDate": "Mon Jan 06 00:00:00 UTC 2020"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Wed Feb 02 10:17:01 UTC 2022"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardSchemeId","cardSchemeDesc","cardScheme","lastUpdatedDate","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

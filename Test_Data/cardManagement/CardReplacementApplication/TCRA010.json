@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TCRA010",
+"Test Case Description":"Validate response after pass any other character into instantReplacement field except 'Y' & 'N'",
+"RequestBody":{
+  "cardId": 2019101100843057408,
+  "remark": "Any other instant character except Y and N",
+  "instantReplacement": "A"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "create card replacement application Failed "
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

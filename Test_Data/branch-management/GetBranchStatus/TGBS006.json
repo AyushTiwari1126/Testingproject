@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGBS006",
+"Test Case Description":"Validate response after providing vald header with request body (pass blank branchId)",
+"RequestBody":{
+  "branchId": ""
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Branch does not exist",
+            "Branch Id does not exist"
+        ]
+    },
+    "responseCode": "602"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

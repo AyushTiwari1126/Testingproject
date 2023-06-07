@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"Validate the response with Sign header value blank ",
+
+"RequestBody":{
+                  "cardId": 2019110400844837739
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}         

@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TTC021",
+"Test Case Description":"To validate response after providing the invalid value into cardId which is not present in any card state",
+"RequestBody":{
+  "cardId": 1234567890123456789,
+  "transactionType": "1",
+  "status": "Y",
+  "remarks": "This is an invalid cardId"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "card id validation error"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

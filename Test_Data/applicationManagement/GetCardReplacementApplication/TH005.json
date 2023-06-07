@@ -1,0 +1,10 @@
+{
+"TestCaseid":"TH005",
+"Test Case Description":"Validate the response without Sign Header.",
+
+"RequestBody":{
+                "applicationStatus": "AU"
+              },
+
+"ExpectedHTTPStatusCode":"400"
+}

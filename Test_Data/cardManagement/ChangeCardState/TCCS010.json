@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCCS010",
+"Test Case Description":"Validation for the response without passing any node into the request body",
+"RequestBody":{},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "validation failed for Set card status remark"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedHTTPStatusCode":"400"
+}

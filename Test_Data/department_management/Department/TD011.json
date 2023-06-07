@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TD011",
+"Test Case Description":"Validate the response for providing request body (pass special characters) in all nodes",
+"RequestBody":{
+  "departmentId": "#@",
+  "departmentDesc": "#@%^&",
+  "status": "A"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "responseText": "Successfully Processed"
+    },
+    "errorDetail": null
+}
+}

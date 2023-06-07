@@ -1,0 +1,29 @@
+{
+"TestCaseid":"TB008",
+"Test Case Description":"To validate the length for countryCode by passing the more than (2 digit ISO standard code) from 'IN' to 'IND'",
+"RequestBody":{
+  "branchName": "himalayaTanishq",
+  "issuerId": "Issuer1",
+  "address1": "FC-26, zero pusta Rd",
+  "address2": "Shastri Park, Shahdara",
+  "state": "Delhi",
+  "countryCode": "IND",
+  "city": "New Delhi",
+  "postalCode": 110053,
+  "contactPerson": "Sanjay Kumar",
+  "emailId": "shastripark.delhi@gmail.com",
+  "phoneNo": "11005311",
+  "accessAllBranch": "Y"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            "\n### Error updating database.  Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"BRANCH\".\"COUNTRY_CODE\" (actual: 3, maximum: 2)\n\n### The error may exist in com/wowcard/wowfinstack/wowdb/dao/BranchMapper.java (best guess)\n### The error may involve com.wowcard.wowfinstack.wowdb.dao.BranchMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: insert into BRANCH (BRANCH_ID, ISSUER_ID, BRANCH_LEVEL, BRANCH_NAME, ADDRESS1, ADDRESS2, CITY, STATE, COUNTRY_CODE, POST_CODE, CONTACT_NAME, PHONE, ACCESS_ALL_BRANCH, LAST_UPDATED_BY, LAST_UPDATED_DATE) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n### Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"BRANCH\".\"COUNTRY_CODE\" (actual: 3, maximum: 2)\n\n; uncategorized SQLException; SQL state [72000]; error code [12899]; ORA-12899: value too large for column \"BPAYISS\".\"BRANCH\".\"COUNTRY_CODE\" (actual: 3, maximum: 2)\n; nested exception is java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"BRANCH\".\"COUNTRY_CODE\" (actual: 3, maximum: 2)\n"
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

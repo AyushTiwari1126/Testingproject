@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCRA012",
+"Test Case Description":"Validate the response after pass spaces only in all the fields except cardId with valid value",
+"RequestBody":{
+  "cardId": 2019101100843057408,
+  "remark": "    ",
+  "instantReplacement": " "
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "create card replacement application Failed "
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

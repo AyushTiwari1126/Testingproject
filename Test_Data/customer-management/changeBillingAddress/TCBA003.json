@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCBA003",
+"Test Case Description":"Validate the response after providing blank billingAddressType in request body",
+
+"RequestBody":{
+                  "customerId": "C1202086160082987",
+                  "billingAddressType": ""
+              },
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "invalid address type"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

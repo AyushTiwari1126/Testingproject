@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH006",
+"Test Case Description":"Validate the response without Authorization header.",
+
+"RequestBody":{
+                "customerId": "C1202086160082987"
+              },
+"ExpectedResponseBody":{
+                        "timestamp": "2023-01-16T05:39:58.772+00:00",
+                        "status": 401,
+                        "error": "Unauthorized",
+                        "path": "/customer-info/v1.0/getCustomerInfoByFilter"
+                       },
+"ExpectedHTTPStatusCode":"401"
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA015",
+"Test Case Description":"Validate the response after providing cardId which is in expired state",
+"RequestBody":{
+  "cardId": 2022032300857541082,
+  "remark": "The cardId is expired",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"310",
+"ExpectedHTTPStatusCode":"200"
+}

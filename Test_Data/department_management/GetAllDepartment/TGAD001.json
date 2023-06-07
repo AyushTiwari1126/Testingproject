@@ -1,0 +1,69 @@
+{
+"TestCaseid":"TGAD001",
+"Test Case Description":"Validate the response after providing valid header with valid request body",
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "departmentId": "18",
+            "departmentDesc": "Admin Department",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Wed Aug 24 09:02:11 UTC 2022"
+        },
+        {
+            "departmentId": "1",
+            "departmentDesc": "Admin Department",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Tue Feb 04 09:31:08 UTC 2020"
+        },
+        {
+            "departmentId": "2",
+            "departmentDesc": "Customer Service",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Tue Feb 04 09:31:08 UTC 2020"
+        },
+        {
+            "departmentId": "3",
+            "departmentDesc": "Finance Department",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Tue Feb 04 09:31:08 UTC 2020"
+        },
+        {
+            "departmentId": "14",
+            "departmentDesc": "wirecard",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Tue Feb 11 17:30:44 UTC 2020"
+        },
+        {
+            "departmentId": "15",
+            "departmentDesc": "securitydepartment1",
+            "issuerId": "Issuer1",
+            "status": "D",
+            "lastUpdatedBy": "WINZAW39",
+            "lastUpdatedDate": "Fri May 15 15:57:05 UTC 2020"
+        },
+        {
+            "departmentId": "17",
+            "departmentDesc": "einstein dep",
+            "issuerId": "Issuer1",
+            "status": "A",
+            "lastUpdatedBy": "einstein",
+            "lastUpdatedDate": "Mon May 24 12:35:09 UTC 2021"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","departmentId","departmentDesc","issuerId","status","lastUpdatedBy","lastUpdatedDate","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TGTCS003",
+"Test Case Description":"Validate the response after providing the invalid CardId in request body",
+"RequestBody":{
+  "cardId": 1234567890123456789,
+  "transactionType": "1"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "DataBase error occurred while inserting the records into DB",
+            "Card data couldn't be fetched from table CARDS for card id: 1234567890123456789"
+        ]
+    },
+    "responseCode": "701"
+},
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

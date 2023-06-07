@@ -1,0 +1,9 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes Sign header as blank)",
+"RequestBody":{
+  "cardId": 2019110400844837739,
+  "transactionType": "1"
+},
+"ExpectedHTTPStatusCode":"400"
+}

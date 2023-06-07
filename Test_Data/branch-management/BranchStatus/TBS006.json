@@ -1,0 +1,24 @@
+{
+"TestCaseid":"TBS006",
+"Test Case Description":"Validate the response after providing any other character except 'A', 'D' & 'I' in StatusCode with valid headers",
+"RequestBody":{
+  "issuerBranchId": {
+    "branchId": "23432"
+  },
+  "Status": {
+    "statusCode": "G"
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+
+"ExpectedHTTPStatusCode":"400"
+}

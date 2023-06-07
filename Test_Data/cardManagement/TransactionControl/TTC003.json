@@ -1,0 +1,16 @@
+{
+"TestCaseid":"TTC003",
+"Test Case Description":"Validate the response after providing the cardId that is present in the state of Inactive Card-IC",
+"RequestBody":{
+  "cardId": 2020031200849469206,
+  "transactionType": "3",
+  "status": "Y",
+  "remarks": "Inactive card with enabled the international transactionType"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"302",
+"ExpectedHTTPStatusCode":"200"
+}

@@ -1,0 +1,9 @@
+{
+"RequestBody":{
+    "authInfo":"blank",
+    "validity":60,
+    "info":{"userId":"admin", 
+"issuerId": "Issuer1"}
+},
+"AuthKey":"ReqDatetime:System Generated"
+}

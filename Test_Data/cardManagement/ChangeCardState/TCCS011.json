@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCCS011",
+"Test Case Description":"Validation for the response by taking the blank values into the request body",
+"RequestBody":{
+  "cardId": 2022040700859700952,
+  "remarks": "",
+  "status": ""
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Validation Error",
+            "validation failed for Set card status remark"
+        ]
+    },
+    "responseCode": "103"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

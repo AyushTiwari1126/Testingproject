@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCI003",
+"Test Case Description":"Validate the response after providing blank value in cardId node ",
+
+"RequestBody":{
+                "cardId": ""
+              },
+"ExpectedResponseBody":{
+                         "errorDetail": {
+                          "errorMessage": [
+                           "Validation Error",
+                          "validation failed for card Info request validation"
+                                           ]
+                                        },
+                          "responseCode": "103"
+                        },
+                   
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+
+}

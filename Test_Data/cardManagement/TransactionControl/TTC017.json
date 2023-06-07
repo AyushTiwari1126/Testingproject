@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TTC017",
+"Test Case Description":"To validate the response for passing the status value expect 'Y' & 'N'",
+"RequestBody":{
+  "cardId": 2019110800845978323,
+  "transactionType": "1",
+  "status": "A",
+  "remarks": "active card with invalid status"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedHTTPStatusCode":"400"
+}

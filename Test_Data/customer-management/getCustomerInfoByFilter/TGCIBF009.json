@@ -1,0 +1,8 @@
+{
+"TestCaseid":"TGCIBF009",
+"Test Case Description":"Validate the response without any node in request body ",
+"RequestBody":{},
+"ExpectedResponseBody":{"errorDetail":{"errorMessage":["Validation Error","All fields of the request-body CustomerInfoRequest is empty"]},"responseCode":"103"},
+"ExpectedHTTPStatusCode":"400"
+
+}

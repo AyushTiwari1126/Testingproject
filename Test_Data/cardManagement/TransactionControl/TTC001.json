@@ -1,0 +1,17 @@
+{
+"TestCaseid":"TTC001",
+"Test Case Description":"To validate the response after passing the valid cardId (which is present in active state-AC)",
+"RequestBody":{
+  "cardId": 2019110400844837739,
+  "transactionType": "1",
+  "status": "Y",
+  "remarks": "Card is closed"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

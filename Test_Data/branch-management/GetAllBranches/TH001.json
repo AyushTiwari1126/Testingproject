@@ -1,0 +1,5 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes ReqDatetime as blank)",
+"KeysForValidationInResponse":["status"]
+}

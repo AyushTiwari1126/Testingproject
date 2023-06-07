@@ -1,0 +1,295 @@
+{
+"TestCaseid":"TGSL001",
+"Test Case Description":"Validate the responseData for Issuer1 with valid headers",
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Thu Apr 13 11:47:16 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "BI",
+            "lastUpdatedDate": "Wed Feb 15 13:52:24 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "0",
+            "lastUpdatedDate": "Wed Apr 05 10:29:04 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "0",
+            "lastUpdatedDate": "Wed Mar 29 07:46:22 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Wed Mar 22 07:56:18 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Wed Mar 22 08:42:37 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Wed Apr 05 10:29:05 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Wed Mar 22 10:12:17 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": null,
+            "lastUpdatedDate": "Wed Apr 05 10:33:26 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Wed Mar 22 09:09:51 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Thu Mar 23 07:27:46 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Thu Apr 13 11:45:49 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Wed Apr 05 10:33:08 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Tue Apr 11 15:00:12 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": null,
+            "lastUpdatedDate": "Wed Apr 05 10:29:13 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Wed Mar 22 09:13:53 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Wed Mar 22 09:18:48 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Thu Apr 13 11:48:11 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Wed Mar 22 12:05:27 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Wed Jun 22 11:24:12 UTC 2022"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Wed Apr 05 10:33:21 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Wed Apr 05 08:04:30 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Wed Mar 22 07:41:55 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Thu Mar 23 07:27:43 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Wed Apr 05 10:33:20 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Thu Mar 23 07:27:49 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Thu Mar 23 07:27:50 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Wed Apr 05 10:33:23 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "RP",
+            "lastUpdatedDate": "Wed Apr 05 10:29:02 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "AC",
+            "lastUpdatedDate": "Mon Apr 03 12:36:16 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "0",
+            "lastUpdatedDate": "Wed Apr 05 10:33:19 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Wed Apr 05 10:28:56 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Mon May 24 12:25:02 UTC 2021"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Fri May 08 17:41:54 UTC 2020"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Fri May 13 10:01:32 UTC 2022"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Fri Feb 17 17:08:00 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Tue Mar 21 09:14:19 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Tue Mar 21 09:41:26 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Wed Mar 22 09:32:30 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Wed Mar 22 09:55:43 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Thu Mar 23 07:27:36 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "VI",
+            "lastUpdatedDate": "Thu Mar 23 07:27:42 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "MC",
+            "lastUpdatedDate": "Thu Mar 23 07:27:47 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Thu Mar 23 07:27:48 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Thu Mar 23 07:27:52 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Thu Mar 23 07:27:53 UTC 2023"
+        },
+        {
+            "cardSchemeId": null,
+            "cardSchemeDesc": null,
+            "cardScheme": "DC",
+            "lastUpdatedDate": "Thu Mar 23 07:27:53 UTC 2023"
+        }
+    ],
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardSchemeId","cardSchemeDesc","cardScheme","lastUpdatedDate","errorDetail"],
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

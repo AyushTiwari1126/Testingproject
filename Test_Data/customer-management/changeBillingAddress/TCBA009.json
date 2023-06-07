@@ -1,0 +1,20 @@
+{
+"TestCaseid":"TCBA009",
+"Test Case Description":"Validate the response after providing invalid billingAddressType (billingAddressType not present on server) in request body",
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "billingAddressType": "P"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            "\n### Error updating database.  Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CUSTOMER\".\"BILLING_TO\" (actual: 4, maximum: 1)\n\n### The error may exist in com/wowcard/wowfinstack/wowdb/dao/CustomerMapper.java (best guess)\n### The error may involve com.wowcard.wowfinstack.wowdb.dao.CustomerMapper.update-Inline\n### The error occurred while setting parameters\n### SQL: update CUSTOMER set BILLING_TO = ? where CUSTOMER_ID = ?\n### Cause: java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CUSTOMER\".\"BILLING_TO\" (actual: 4, maximum: 1)\n\n; uncategorized SQLException; SQL state [72000]; error code [12899]; ORA-12899: value too large for column \"BPAYISS\".\"CUSTOMER\".\"BILLING_TO\" (actual: 4, maximum: 1)\n; nested exception is java.sql.SQLException: ORA-12899: value too large for column \"BPAYISS\".\"CUSTOMER\".\"BILLING_TO\" (actual: 4, maximum: 1)\n"
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+}

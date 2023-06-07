@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TD008",
+"Test Case Description":"Validate the response for passing the float value into the departmentId",
+"RequestBody":{
+  "departmentId": "9.08",
+  "departmentDesc": "Departmentdepartment",
+  "status": "A"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Duplicate Ref. No",
+            "Getting error while creating new department as Department Id is already present in database"
+        ]
+    },
+    "responseCode": "113"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

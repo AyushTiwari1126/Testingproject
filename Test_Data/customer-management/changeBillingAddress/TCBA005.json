@@ -1,0 +1,8 @@
+{
+"TestCaseid":"TCBA005",
+"Test Case Description":"Validate the response after providing request body without billingAddressType node in request body",
+"RequestBody":{
+                  "customerId": "C1202086160082987"
+              },
+"ExpectedHTTPStatusCode":"400"
+}

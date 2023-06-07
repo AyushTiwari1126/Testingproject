@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TGC020",
+"Test Case Description":"Validate the response after providing invalid productId(not present on server) request body",
+"Test Case Description1":"Validate the productId of generated card",
+"RequestBody":{
+                     "productId": "100"
+              },
+
+                      
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+
+}

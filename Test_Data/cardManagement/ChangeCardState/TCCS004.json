@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TCCS004",
+"Test Case Description":"To validate the response after passing the cardId change from expired state to suspectFraud card state",
+"RequestBody":{
+  "cardId": 2022091300866401876,
+  "remarks": "Card state change from expired state to suspect fraud state",
+  "status": "SF"
+},
+"ExpectedResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardId": 2022091300866401876,
+        "customerId": "C0913471320106541",
+        "issuerId": null,
+        "status": "NUMBER_8",
+        "accountId": "AC0913479250106542",
+        "cardProductId": "000",
+        "expDate": null,
+        "billingDate": "null",
+        "creditLimitPercent": 100,
+        "cashLimitPercent": 90,
+        "cardholderType": 1,
+        "maskedCardNo": "100971XXXX001876"
+    },
+    "errorDetail": null
+},
+"KeysForValidationInResponse":["responseCode","responseData","cardId","customerId","issuerId","status","accountId","cardProductId","billingDate","creditLimitPercent","cardholderType","maskedCardNo","errorDetail"],
+"ExpectedCardId":2022091300866401876,
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+}

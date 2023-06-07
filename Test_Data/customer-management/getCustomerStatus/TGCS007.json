@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCS007",
+"Test Case Description":"Validate the response after providing invalid customerId(length max-1=19)",
+
+"RequestBody":{
+                "customerId": "C121212121212121212"
+              },
+"ExpectedResponseBody":{
+                          "errorDetail": {
+                          "errorMessage": [
+                          "Requested Data Not Available",
+                          "Customer does not exist"
+                                          ]
+                                        },
+                          "responseCode": "110"
+                       },
+                      
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

@@ -1,0 +1,19 @@
+{
+"TestCaseid":"TCBA002",
+"Test Case Description":"Validate the response after providing blank customerId in request body",
+"RequestBody":{
+                 "customerId": "",
+                  "billingAddressType": "H"
+              },
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "billing address updation get failed"
+        ]
+    },
+    "responseCode": "101"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

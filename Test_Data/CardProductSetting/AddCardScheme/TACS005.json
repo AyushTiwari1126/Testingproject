@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TACS005",
+"Test Case Description":"To validate for all the nodes in requestBody are mandatory or not by passing few nodes into the request body",
+"RequestBody":{
+  "tlementBin": "string",
+  "bin": "3095",
+  "binLength": "4",
+  "settlementBin": "3095",
+  "lowRangePosition": "5",
+  "cardNextValue": "135225",
+  "checkDigitType": "MOD10"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": {
+        "cardSchemeId": "83"
+    },
+    "errorDetail": null
+},
+"ExpectedHTTPStatusCode":"400"
+}

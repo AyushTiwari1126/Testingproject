@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate the response with ReqDatetime header value blank.",
+
+"RequestBody":{
+  "applicationStatus": "N"
+},
+"ExpectedResponseBody":{
+                        "timestamp": "2023-03-24T04:34:38.496+00:00",
+                        "status": 500,
+                        "error": "Internal Server Error",
+                        "path": "/replacement/v1.0/getCardReplacementApplication"
+},
+"ExpectedHTTPStatusCode":"500"
+}

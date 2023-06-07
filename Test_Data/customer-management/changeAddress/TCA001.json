@@ -1,0 +1,26 @@
+{
+"TestCaseid":"TCA001",
+"Test Case Description":"Validate the response after providing valid header with valid request body.",
+
+"RequestBody":{
+                   "customerId": "C1202086160082987",
+                   "newAddress": {
+                   "address1": "Z, Ithum",
+                   "address2": "bbb, Ithum",
+                   "country": "India",
+                   "state": "Delhi",
+                   "city": "Delhi",
+                   "postalCode": 8,
+                   "phone": "0120 3203939",
+                   "addressType": "P"
+              }
+},
+"ExpectedResponseBody":{
+                         "responseCode": "000",
+                         "errorDetail": null
+                       },
+"KeysForValidationInResponse":["responseCode","errorDetail"],                       
+"ExpectedResponseCode":"000",
+"ExpectedHTTPStatusCode":"200"
+
+}

@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TB010",
+"Test Case Description":"Validate the response for valid headers with passing integer type values into all the nodes",
+"RequestBody":{
+  "branchName": 945,
+  "issuerId": 170,
+  "address1": 35120,
+  "address2": 352,
+  "state": 315,
+  "countryCode": 19,
+  "city": 87,
+  "postalCode": 1103053,
+  "contactPerson": 3619,
+  "emailId": 9218017,
+  "phoneNo": 12749,
+  "accessAllBranch": 146
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+"ExpectedResponseCode":"101",
+"ExpectedHTTPStatusCode":"500"
+}

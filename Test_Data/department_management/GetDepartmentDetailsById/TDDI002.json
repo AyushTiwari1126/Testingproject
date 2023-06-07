@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TDDI002",
+"Test Case Description":"To validate the response after passing the invalid departmentId (which is not present into the database)",
+"RequestBody":{
+  "departmentId": "50"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

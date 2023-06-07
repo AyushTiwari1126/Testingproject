@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TUCS004",
+"Test Case Description":"Validate the response after change the bin from 6-digits to 7 or more digits",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID",
+  "cardSchemeData": {
+    "tlementBin": "string",
+    "cardTypeDesc": "Health Card",
+    "cardScheme": "RP",
+    "bin": "43721700",
+    "binLength": "6",
+    "settlementBin": "43721700",
+    "cardNoLength": "16",
+    "lowRange": "0030",
+    "highRange": "0276",
+    "lowRangePosition": "7",
+    "cardNextValue": "0212",
+    "checkDigitType": "MOD10"
+  }
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "No Details found for given Card Scheme"
+        ]
+    },
+    "responseCode": "110"
+},
+"ExpectedHTTPStatusCode":"400"
+}

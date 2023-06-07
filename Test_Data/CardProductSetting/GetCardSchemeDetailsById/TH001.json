@@ -1,0 +1,13 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes ReqDatetime as blank)",
+"RequestBody":{
+  "cardSchemeId": "SystemGeneratedID"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:50:28.511+00:00",
+    "status": 500,
+    "error": "Internal Server Error"
+},
+"ExpectedHTTPStatusCode":"500"
+}

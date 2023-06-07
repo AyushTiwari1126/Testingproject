@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TH003",
+"Test Case Description":"Validate response after providing valid request body with valid header (takes authorization as blank)",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": "1"
+  },
+  "Status": {
+    "statusCode": "A"
+  }
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-24T07:54:02.584+00:00",
+    "status": 401,
+    "error": "Unauthorized"
+},
+"ExpectedHTTPStatusCode":"401"
+}

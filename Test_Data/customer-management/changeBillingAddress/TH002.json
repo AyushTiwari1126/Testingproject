@@ -1,0 +1,9 @@
+{
+"TestCaseid":"TH002",
+"Test Case Description":"Validate the response with Sign header value blank",
+"RequestBody":{
+                "customerId": "C1202086160082987",
+                "billingAddressType": "H"
+              },
+"ExpectedHTTPStatusCode":"400"
+}

@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TH007",
+"Test Case Description":"To validate the response after providing valid request body without passing any header value",
+"RequestBody":{
+	"branchId": "00"
+},
+"ExpectedResponseBody":{
+    "timestamp": "2023-01-30T07:59:58.581+00:00",
+    "status": 401,
+    "error": "Unauthorized",
+    "path": "/branch-info/v1.0/getBranchStatus"
+},
+"ExpectedHTTPStatusCode":"401"
+}

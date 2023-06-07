@@ -1,0 +1,31 @@
+{
+"TestCaseid":"TBDN005",
+"Test Case Description":"Validate response after providing valid header with request body (takes branchName as blank)",
+"RequestBody":{
+  "branchName": ""
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [
+        {
+            "branchId": "23432",
+            "branchName": "uiyuh",
+            "address1": "frrgf",
+            "address2": "yuguyg",
+            "city": "SG",
+            "state": "yuhuhu",
+            "country": "SG",
+            "postalCode": 12334,
+            "contactPerson": "sferfer",
+            "phoneNo": "3453543543",
+            "accessAllBranch": "N",
+            "userType": null,
+            "lastUpdatedBy": "ASPSUPERADMIN",
+            "lastUpdatedDate": "Thu Jul 28 10:22:40 UTC 2022"
+        }
+    ],
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

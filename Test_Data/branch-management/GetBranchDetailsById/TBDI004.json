@@ -1,0 +1,14 @@
+{
+"TestCaseid":"TBDI004",
+"Test Case Description":"Valiadte the response after providing Valid headers with spaces only in branchId)",
+"RequestBody":{
+  "branchId": "      "
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "responseData": [],
+    "errorDetail": null
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

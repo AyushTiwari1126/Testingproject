@@ -1,0 +1,18 @@
+{
+"TestCaseid":"TGCDI005",
+"Test Case Description":"To validate the response after passing the cardSchemeId of ASP with token of Issuer1",
+"RequestBody":{
+  "cardSchemeId": "13"
+},
+"ResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "No Details found for given Card Scheme"
+        ]
+    },
+    "responseCode": "110"
+},
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

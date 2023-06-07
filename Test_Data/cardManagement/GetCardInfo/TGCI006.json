@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCI006",
+"Test Case Description":"Validate the response after providing valid (max-1=18) numbers in cardId",
+
+"RequestBody":{
+                 "cardId": 201911040084483773
+              },
+"ExpectedResponseBody":{
+                        "errorDetail": {
+                         "errorMessage": [
+                       "Requested Data Not Available",
+                        "Card Details did not exist"
+                                     ]
+                                            },
+                             "responseCode": "110"
+                    },
+                   
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

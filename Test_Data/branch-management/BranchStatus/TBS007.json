@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TBS007",
+"Test Case Description":"Validate the response after providing valid headers with request body (pass integer values)",
+"RequestBody":{
+  "issuerBranchId": {
+    "branchId": 12345
+  },
+  "Status": {
+    "statusCode": 12345
+  }
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Internal Server Error",
+            "",
+            null
+        ]
+    },
+    "responseCode": "101"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],                       
+"ExpectedResponseCode":"101",
+"ExpectedHTTPStatusCode":"500"
+}

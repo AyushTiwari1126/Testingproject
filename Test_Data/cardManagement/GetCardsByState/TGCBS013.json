@@ -1,0 +1,21 @@
+{
+"TestCaseid":"TGCBS013",
+"Test Case Description":"Validate the response after providing valid header with valid request body(status=BF)",
+
+"RequestBody":{
+                "status": "BF"
+              },
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Requested Data Not Available",
+            "No Data Found for given issuer id and status code"
+        ]
+    },
+    "responseCode": "110"
+                       },
+                       
+"ExpectedResponseCode":"110",
+"ExpectedHTTPStatusCode":"404"
+
+}

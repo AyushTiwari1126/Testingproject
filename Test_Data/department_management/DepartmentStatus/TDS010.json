@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TDS010",
+"Test Case Description":"Validate response after providing valid headers with request body (takes spaces in all nodes)",
+"RequestBody":{
+  "issuerDepartmentId": {
+    "departmentId": " "
+  },
+  "Status": {
+    "statusCode": " "
+  }
+},
+"ExpectedResponseBody":{
+    "errorDetail": {
+        "errorMessage": [
+            "Transaction is NOT permitted to Card product",
+            "Exception occurred while validating the status code406 NOT_ACCEPTABLE \"Exception occurred as Status code is empty\""
+        ]
+    },
+    "responseCode": "236"
+},
+"KeysForValidationInResponse":["responseCode","errorDetail","errorMessage"],
+
+"ExpectedResponseCode":"103",
+"ExpectedHTTPStatusCode":"406"
+}

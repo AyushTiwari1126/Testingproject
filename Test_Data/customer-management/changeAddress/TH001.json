@@ -1,0 +1,25 @@
+{
+"TestCaseid":"TH001",
+"Test Case Description":"Validate the response with ReqDatetime header value blank.",
+
+"RequestBody":{
+  "customerId": "C1202086160082987",
+  "newAddress": {
+    "address1": "Z, Ithum",
+    "address2": "bbb, Ithum",
+    "country": "India",
+    "state": "Delhi",
+    "city": "Delhi",
+    "postalCode": 8,
+    "phone": "0120 3203939",
+    "addressType": "P"
+  }
+},
+"ExpectedResponseBody":{
+                         "timestamp": "2023-02-20T05:00:59.092+00:00",
+                         "status": 500,
+                         "error": "Internal Server Error",
+                         "path": "/address-managment/v1.0/changeAddress"
+                       },
+"ExpectedHTTPStatusCode":"500"
+}

@@ -1,0 +1,15 @@
+{
+"TestCaseid":"TCRA002",
+"Test Case Description":"To validate the response for passing the cardId that is present in Closed State -CC",
+"RequestBody":{
+  "cardId": 2020020300848498851,
+  "remark": "The cardId is from closed card state",
+  "instantReplacement": "Y"
+},
+"ResponseBody":{
+    "responseCode": "000",
+    "errorDetail": null
+},
+"ExpectedResponseCode":"304",
+"ExpectedHTTPStatusCode":"200"
+}
